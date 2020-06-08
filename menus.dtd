@@ -1,0 +1,9 @@
+<!ELEMENT menus (menu+)>
+<!ELEMENT menu (pizza, bebida, entrante)>
+<!ELEMENT pizza (#PCDATA)>
+<!ELEMENT bebida (#PCDATA)>
+<!ELEMENT entrante (#PCDATA)>
+
+<!ATTLIST menu precio CDATA #REQUIRED>
+<!ATTLIST menu descripcion CDATA #REQUIRED>
+<!ATTLIST menu imagen CDATA #REQUIRED>

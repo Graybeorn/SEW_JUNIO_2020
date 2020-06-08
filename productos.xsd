@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="productos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pizzas" />
+        <xs:element ref="bebidas" />
+        <xs:element ref="entrantes" />
+        <xs:element ref="postres" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pizzas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="pizza" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pizza">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="valorNutricional" />
+        <xs:element minOccurs="2" maxOccurs="6" ref="ingrediente" />
+      </xs:sequence>
+      <xs:attribute name="nombre" type="xs:string" use="required" />
+      <xs:attribute name="imagen" type="xs:string" use="required" />
+      <xs:attribute name="precio" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ingrediente" type="xs:string" />
+  <xs:element name="bebidas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="bebida" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bebida">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="valorNutricional" />
+      </xs:sequence>
+      <xs:attribute name="nombre" type="xs:string" use="required" />
+      <xs:attribute name="precio" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="entrantes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="entrante" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="entrante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="valorNutricional" />
+      </xs:sequence> 
+      <xs:attribute name="nombre" type="xs:string" use="required" />
+      <xs:attribute name="precio" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="postres">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="postre" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="postre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="valorNutricional" />
+      </xs:sequence>
+      <xs:attribute name="nombre" type="xs:string" use="required" />
+      <xs:attribute name="precio" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="valorNutricional">
+    <xs:complexType>
+      <xs:attribute name="kcal" type="xs:string" use="required" />
+      <xs:attribute name="proteinas" type="xs:string" />
+      <xs:attribute name="grasas" type="xs:string" />
+      <xs:attribute name="saturadas" type="xs:string" />
+      <xs:attribute name="azucares" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

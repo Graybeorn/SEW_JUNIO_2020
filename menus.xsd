@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/menus" elementFormDefault="qualified" targetNamespace="http://tempuri.org/menus" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="menus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="menu" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="menu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" ref="pizza" />
+        <xs:element minOccurs="1" ref="bebida" />
+        <xs:element minOccurs="1" ref="entrante" />
+      </xs:sequence>
+      <xs:attribute name="precio" type="xs:string" use="required" />
+      <xs:attribute name="descripcion" type="xs:string" use="required" />
+      <xs:attribute name="imagen" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pizza" type="xs:string" />
+  <xs:element name="bebida" type="xs:string" />
+  <xs:element name="entrante" type="xs:string" />
+</xs:schema>
