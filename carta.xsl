@@ -145,7 +145,7 @@
             <xsl:variable name="id" select="id" />
             <table>
               <tr>
-                <th cospan="4">
+                <th colspan="4">
                   <xsl:value-of select="@nombre"/>
                 </th>
               </tr>
