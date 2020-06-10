@@ -6,7 +6,7 @@
       <section>
         <h3>Pizzas</h3>
         <xsl:for-each select="productos/pizzas/pizza">
-        <div class="dropdown">
+        <div>
           <xsl:variable name="id" select="id" />
           <table>
             <tr>
@@ -16,7 +16,7 @@
                 </xsl:attribute></img>
               </td>
               <td colspan="6"><xsl:value-of select="@nombre"/></td>
-              <td><button onClick="showInfo('{$id}')">?</button></td>
+              <td><button class="dropdown">?</button></td>
             </tr>
             <tr>
               <td rowspan="3" colspan="6">
@@ -57,17 +57,17 @@
       <section>
         <h3>Bebidas</h3>
         <xsl:for-each select="productos/bebidas/bebida">
-          <div class="dropdown">
+          <div>
             <xsl:variable name="id" select="id" />
             <table>
               <tr>
-                <th rowspan="4">
+                <th colspan="4">
                   <xsl:value-of select="@nombre"/>
                 </th>
               </tr>
               <tr>
                 <td>
-                  <button onClick="showInfo('{$id}')">?</button>
+                  <button class="dropdown">?</button>
                 </td>
                 <td>
                   <button onClick="decrease('{$id}')">-</button>
@@ -99,17 +99,17 @@
       <section>
         <h3>Entrantes</h3>
         <xsl:for-each select="productos/entrantes/entrante">
-          <div class="dropdown">
+          <div>
             <xsl:variable name="id" select="id" />
             <table>
               <tr>
-                <th rowspan="4">
+                <th colspan="4">
                   <xsl:value-of select="@nombre"/>
                 </th>
               </tr>
               <tr>
                 <td>
-                  <button onClick="showInfo('{$id}')">?</button>
+                  <button class="dropdown">?</button>
                 </td>
                 <td>
                   <button onClick="decrease('{$id}')">-</button>
@@ -141,17 +141,17 @@
       <section>
         <h3>Postres</h3>
         <xsl:for-each select="productos/postres/postre">
-          <div class="dropdown">
+          <div>
             <xsl:variable name="id" select="id" />
             <table>
               <tr>
-                <th rowspan="4">
+                <th cospan="4">
                   <xsl:value-of select="@nombre"/>
                 </th>
               </tr>
               <tr>
                 <td>
-                  <button onClick="showInfo('{$id}')">?</button>
+                  <button class="dropdown">?</button>
                 </td>
                 <td>
                   <button onClick="decrease('{$id}')">-</button>
