@@ -23,9 +23,10 @@ class MenuLoader {
   }
 
   displayResult() {
-    this.xml = loadXMLDoc("productos.xml");
-    this.xsl = loadXMLDoc("carta.xsl");
+    this.xml = loadXMLDoc("https://uo252376.github.io/SEW_JUNIO_2020/productos.xml");
+    this.xsl = loadXMLDoc("https://uo252376.github.io/SEW_JUNIO_2020/carta.xsl");
     console.log("enter dispayResult");
+    console.log(this.xml);
     // code for IE
     if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
       let ex = this.xml.transformNode(this.xsl);
