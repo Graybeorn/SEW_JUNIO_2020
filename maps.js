@@ -7,9 +7,9 @@ class Location {
   initMap(){
       this.map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -34.397, lng: 150.644},
-          zoom: 6
+          zoom: 10
       });
-      this.loadRestaurants();
+      this.loadRestaurants();   
       this.infoWindow = new google.maps.InfoWindow;
       if(navigator.geolocation){
           navigator.geolocation.getCurrentPosition(this.showPosition.bind(this), this.showError.bind(this));
@@ -56,6 +56,7 @@ class Location {
     ];
     
     arr.forEach(rest => {
+      console.log("coordenada " + rest);
       new google.maps.Marker({
         map: this.map,
         position: {lat: rest.x, lng: rest.y}
