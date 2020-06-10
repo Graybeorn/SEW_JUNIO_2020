@@ -60,7 +60,7 @@ class Location {
         map: this.map,
         position: {lat: rest.x, lng: rest.y},
         icon: {
-          url: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+          url: "https://uo252376.github.io/SEW_JUNIO_2020/resources/blue-dot.png"
         }
       });
     });
