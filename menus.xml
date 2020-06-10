@@ -2,11 +2,11 @@
 <!DOCTYPE menus SYSTEM "menus.dtd">
 <menus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="menus.xsd">
-  
+ 
   <menu precio="" descripcion="" imagen="">
-    <pizza></pizza>
-    <bebida></bebida>
-    <entrante></entrante>
+    <pizza>Margarita</pizza>
+    <bebida>Coca-Cola</bebida>
+    <entrante>Nuggets</entrante>
   </menu>
   
 </menus>

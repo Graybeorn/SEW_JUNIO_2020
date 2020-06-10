@@ -1,6 +1,9 @@
 class MenuLoader {
 
   constructor() {
+    this.xml;
+    this.xsl;
+    console.log("MenuLoader created");
   }
 
   loadXMLDoc(filename) {
@@ -20,8 +23,9 @@ class MenuLoader {
   }
 
   displayResult() {
-    this.xml = loadXMLDoc("./productos.xml");
-    this.xsl = loadXMLDoc("./carta.xsl");
+    this.xml = loadXMLDoc("productos.xml");
+    this.xsl = loadXMLDoc("carta.xsl");
+    console.log("enter dispayResult");
     // code for IE
     if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
       let ex = this.xml.transformNode(this.xsl);
