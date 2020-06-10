@@ -5,7 +5,7 @@
   <xsl:template match="/">
       <section>
         <h3>Pizzas</h3>
-        <xsl:for-each select="menu/pizzas/pizza">
+        <xsl:for-each select="productos/pizzas/pizza">
         <div class="dropdown">
           <xsl:variable name="id" select="id" />
           <table>
@@ -56,7 +56,7 @@
 
       <section>
         <h3>Bebidas</h3>
-        <xsl:for-each select="menu/bebidas/bebida">
+        <xsl:for-each select="productos/bebidas/bebida">
           <div class="dropdown">
             <xsl:variable name="id" select="id" />
             <table>
@@ -98,7 +98,7 @@
       
       <section>
         <h3>Entrantes</h3>
-        <xsl:for-each select="menu/entrantes/entrante">
+        <xsl:for-each select="productos/entrantes/entrante">
           <div class="dropdown">
             <xsl:variable name="id" select="id" />
             <table>
@@ -140,7 +140,7 @@
       
       <section>
         <h3>Postres</h3>
-        <xsl:for-each select="menu/postres/postre">
+        <xsl:for-each select="productos/postres/postre">
           <div class="dropdown">
             <xsl:variable name="id" select="id" />
             <table>
