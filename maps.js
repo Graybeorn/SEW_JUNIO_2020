@@ -57,11 +57,8 @@ class Location {
 
     arr.forEach(rest => {
       new google.maps.Marker({
-        map: this.map,
         position: {lat: rest.x, lng: rest.y},
-        icon: {
-          url: "https://uo252376.github.io/SEW_JUNIO_2020/resources/blue-dot.png"
-        }
+        map: this.map
       });
     });
   }
