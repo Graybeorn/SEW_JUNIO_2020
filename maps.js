@@ -6,11 +6,10 @@ class Location {
   }
   initMap(){
       this.map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 43.368215, lng: -5.835103},
+          center: {lat: -34.397, lng: 150.644},
           zoom: 6
       });
       this.infoWindow = new google.maps.InfoWindow;
-      this.loadRestaurants();
       if(navigator.geolocation){
           navigator.geolocation.getCurrentPosition(this.showPosition.bind(this), this.showError.bind(this));
       } else {
@@ -42,25 +41,6 @@ class Location {
             $("#info").text("Ha sucedido un error desconocido.");
           break;
       }
-  }
-
-  loadRestaurants(){
-    // Crear marker por cada restaurante
-    let arr = [
-      {x: 43.3833306, y: -5.6666694444444445},
-      {x: 43.2916, y: -5.699380555555556},
-      {x:43.3602889, y: -5.844761111111111},
-      {x:43.4333306, y: -5.883330555555556},
-      {x:43.5293111, y: -5.677319444444445},
-      {x:43.5666694, y: -5.933330555555556}
-    ];
-
-    arr.forEach(rest => {
-      new google.maps.Marker({
-        position: {lat: rest.x, lng: rest.y},
-        map: this.map
-      });
-    });
   }
 }
 
