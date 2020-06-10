@@ -21,7 +21,9 @@
             <tr>
               <td rowspan="3" colspan="6">
                 <p>Ingredientes: 
-                  <xsl:value-of select="ingrediente" separator=", " />
+                <xsl:template match="/ingrdiente">
+                  <xsl:value-of select="." separator=", "/>
+                </xsl:template>
                 </p>
               </td>
               <td>
