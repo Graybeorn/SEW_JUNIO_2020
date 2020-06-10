@@ -19,7 +19,7 @@
               <td class="dropdown">?
                 <xsl:for-each select="valorNutricional">
                   <div class="dropdown-content">
-                    <span>kcal: <xsl:value-of select="@kcal"/> proteinas: <xsl:value-of select="@proteinas"/> grasas: <xsl:value-of select="@grasas"/> saturadas: <xsl:value-of select="@saturadas"/> azúcares: <xsl:value-of select="@azucares"/></span>
+                      <span>kcal: <xsl:value-of select="@kcal"/> <br/>proteinas: <xsl:value-of select="@proteinas"/> <br/>grasas: <xsl:value-of select="@grasas"/> <br/>saturadas: <xsl:value-of select="@saturadas"/> <br/>azúcares: <xsl:value-of select="@azucares"/></span>
                   </div>
                 </xsl:for-each>
               </td>
@@ -75,7 +75,7 @@
                 <td class="dropdown">?
                   <xsl:for-each select="valorNutricional">
                     <div class="dropdown-content">
-                      <span>kcal: <xsl:value-of select="@kcal"/> proteinas: <xsl:value-of select="@proteinas"/> grasas: <xsl:value-of select="@grasas"/> saturadas: <xsl:value-of select="@saturadas"/> azúcares: <xsl:value-of select="@azucares"/></span>
+                      <span>kcal: <xsl:value-of select="@kcal"/> <br/>proteinas: <xsl:value-of select="@proteinas"/> <br/>grasas: <xsl:value-of select="@grasas"/> <br/>saturadas: <xsl:value-of select="@saturadas"/> <br/>azúcares: <xsl:value-of select="@azucares"/></span>
                     </div>
                   </xsl:for-each>
                 </td>
@@ -114,7 +114,7 @@
                 <td class="dropdown">?
                   <xsl:for-each select="valorNutricional">
                     <div class="dropdown-content">
-                      <span>kcal: <xsl:value-of select="@kcal"/> proteinas: <xsl:value-of select="@proteinas"/> grasas: <xsl:value-of select="@grasas"/> saturadas: <xsl:value-of select="@saturadas"/> azúcares: <xsl:value-of select="@azucares"/></span>
+                      <span>kcal: <xsl:value-of select="@kcal"/> <br/>proteinas: <xsl:value-of select="@proteinas"/> <br/>grasas: <xsl:value-of select="@grasas"/> <br/>saturadas: <xsl:value-of select="@saturadas"/> <br/>azúcares: <xsl:value-of select="@azucares"/></span>
                     </div>
                   </xsl:for-each>
                 </td>
@@ -153,7 +153,7 @@
                 <td class="dropdown">?
                   <xsl:for-each select="valorNutricional">
                     <div class="dropdown-content">
-                      <span>kcal: <xsl:value-of select="@kcal"/> proteinas: <xsl:value-of select="@proteinas"/> grasas: <xsl:value-of select="@grasas"/> saturadas: <xsl:value-of select="@saturadas"/> azúcares: <xsl:value-of select="@azucares"/></span>
+                      <span>kcal: <xsl:value-of select="@kcal"/> <br/>proteinas: <xsl:value-of select="@proteinas"/> <br/>grasas: <xsl:value-of select="@grasas"/> <br/>saturadas: <xsl:value-of select="@saturadas"/> <br/>azúcares: <xsl:value-of select="@azucares"/></span>
                     </div>
                   </xsl:for-each>
                 </td>
