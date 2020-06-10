@@ -6,21 +6,25 @@
 <!ATTLIST pizza nombre CDATA #REQUIRED>
 <!ATTLIST pizza imagen CDATA #REQUIRED>
 <!ATTLIST pizza precio CDATA #REQUIRED>
+<!ATTLIST pizza id CDATA #REQUIRED>
 
 <!ELEMENT bebidas (bebida+)>
 <!ELEMENT bebida (valorNutricional)>
 <!ATTLIST bebida nombre CDATA #REQUIRED>
 <!ATTLIST bebida precio CDATA #REQUIRED>
+<!ATTLIST bebida id CDATA #REQUIRED>
 
 <!ELEMENT entrantes (entrante+)>
 <!ELEMENT entrante (valorNutricional)>
 <!ATTLIST entrante nombre CDATA #REQUIRED>
 <!ATTLIST entrante precio CDATA #REQUIRED>
+<!ATTLIST entrante id CDATA #REQUIRED>
 
 <!ELEMENT postres (postre+)>
 <!ELEMENT postre (valorNutricional)>
 <!ATTLIST postre nombre CDATA #REQUIRED>
 <!ATTLIST postre precio CDATA #REQUIRED>
+<!ATTLIST postre id CDATA #REQUIRED>
 
 <!ELEMENT valorNutricional EMPTY>
 <!ATTLIST valorNutricional kcal CDATA #REQUIRED>

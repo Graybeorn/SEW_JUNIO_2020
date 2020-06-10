@@ -26,6 +26,7 @@
       <xs:attribute name="nombre" type="xs:string" use="required" />
       <xs:attribute name="imagen" type="xs:string" use="required" />
       <xs:attribute name="precio" type="xs:string" use="required" />
+      <xs:attribute name="id" type="xs:string" use="required" />
     </xs:complexType>
   </xs:element>
   <xs:element name="ingrediente" type="xs:string" />
@@ -43,6 +44,7 @@
       </xs:sequence>
       <xs:attribute name="nombre" type="xs:string" use="required" />
       <xs:attribute name="precio" type="xs:string" use="required" />
+      <xs:attribute name="id" type="xs:string" use="required" />
     </xs:complexType>
   </xs:element>
   <xs:element name="entrantes">
@@ -59,6 +61,7 @@
       </xs:sequence> 
       <xs:attribute name="nombre" type="xs:string" use="required" />
       <xs:attribute name="precio" type="xs:string" use="required" />
+      <xs:attribute name="id" type="xs:string" use="required" />
     </xs:complexType>
   </xs:element>
   <xs:element name="postres">
@@ -75,6 +78,7 @@
       </xs:sequence>
       <xs:attribute name="nombre" type="xs:string" use="required" />
       <xs:attribute name="precio" type="xs:string" use="required" />
+      <xs:attribute name="id" type="xs:string" use="required" />
     </xs:complexType>
   </xs:element>
   <xs:element name="valorNutricional">
