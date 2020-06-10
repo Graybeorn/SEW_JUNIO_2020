@@ -54,11 +54,11 @@ class Location {
       {x:43.5293111, y: -5.677319444444445},
       {x:43.5666694, y: -5.933330555555556}
     ];
-    
-    arr.forEach(x, y => {
+
+    arr.forEach(rest => {
       new google.maps.Marker({
         map: this.map,
-        position: {lat: x, lng: y},
+        position: {lat: rest.x, lng: rest.y},
         icon: {
           url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
         }
