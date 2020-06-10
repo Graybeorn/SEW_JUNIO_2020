@@ -8,19 +8,14 @@ class MenuLoader {
 
   loadXMLDoc(filename) {
     let xhttp;
-    if (window.ActiveXObject) {
-      xhttp = new ActiveXObject("Msxml2.XMLHTTP");
-    } else {
-      xhttp = new XMLHttpRequest();
+    if (window.XMLHttpRequest) {
+       xhttp = new XMLHttpRequest();
+    } else {    // IE 5/6
+       xhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
     xhttp.open("GET", filename, false);
-    try {
-      xhttp.responseType = "msxml-document"
-    } catch(err) {
-
-    }
-    xhttp.send("");
-    return xhttp.responseXML;
+    xhttp.send();
+    return xhttp.responseXML; 
   }
 
   displayResult() {
