@@ -9,3 +9,7 @@ button.continuar {
   color: white;
   align-self: end;
 }
+
+.domicilio, .menu{
+  flex-direction: row;
+}
