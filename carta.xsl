@@ -24,7 +24,7 @@
                 <xsl:for-each select="ingrediente">
                   <xsl:value-of select="."/>                                    
                   <xsl:choose>
-                    <xsl:when test="position() != last()">,<br/></xsl:when>
+                    <xsl:when test="position() != last()">, </xsl:when>
                   </xsl:choose>
                 </xsl:for-each>
                 </p>
