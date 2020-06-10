@@ -8,6 +8,7 @@
     <base href="https://uo252376.github.io/SEW_JUNIO_2020/" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="pedidos.css">
 </head>
 <body>
   <header>
@@ -23,6 +24,34 @@
   </header>
 
   <section>
+
+    <h2>Realizar pedido</h2>
+
+    <h3>Tipo de pedido</h3>
+
+    <input type="radio" id="domicilio" name="tipoPedido" value="domicilio">
+    <label for="male">A domicilio</label>
+    <input type="radio" id="recogida" name="tipoPedido" value="recogida">
+    <label for="female">Recogida</label>
+
+    <div class="domicilio">
+      <input id="direccion" type="text" onchange="servicioPedidos.setDireccion()"/>
+    </div>
+
+    <div class="recogida">
+      <select id="restauranteRecogida" onchange="servicioPedidos.setRestaurante()">
+        <option value="Avilés">Avilés</option>
+        <option value="Gijón">Gijón</option>
+        <option value="Oviedo">Oviedo</option>
+        <option value="Siero">Siero</option>
+        <option value="Langreo">Langreo</option>
+        <option value="Llanera">Llanera</option>
+      </select>
+    </div>
+
+    <button class="continuar" onclick="servicioPedidos.continuar()">Continuar</button>
+
+
   </section>
 
   <footer>
