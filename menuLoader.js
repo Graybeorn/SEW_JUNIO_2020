@@ -7,10 +7,11 @@ class MenuLoader {
   }
 
   loadXMLDoc(filename) {
+    let xhttp;
     if (window.ActiveXObject) {
-      let xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+      xhttp = new ActiveXObject("Msxml2.XMLHTTP");
     } else {
-      let xhttp = new XMLHttpRequest();
+      xhttp = new XMLHttpRequest();
     }
     xhttp.open("GET", filename, false);
     try {
