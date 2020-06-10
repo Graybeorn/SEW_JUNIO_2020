@@ -3,20 +3,21 @@ class MenuLoader {
   constructor() {
     this.xml;
     this.xsl;
+    this.xhttp
     console.log("MenuLoader created");
   }
 
   loadXMLDoc(filename) {
     if (window.XMLHttpRequest) {
       // code for modern browsers
-      var xmlhttp = new XMLHttpRequest();
+      this.xhttp = new XMLHttpRequest();
     } else {
       // code for old IE browsers
-      var xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      this.xhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    xmlhttp.open("GET", filename, false);
-    xmlhttp.send();
-    return xmlhttp.responseXML; 
+    this.xhttp.open("GET", filename, false);
+    this.xhttp.send();
+    return xhttp.responseXML; 
   }
 
   displayResult() {
@@ -25,7 +26,7 @@ class MenuLoader {
     this.xsl = this.loadXMLDoc("https://uo252376.github.io/SEW_JUNIO_2020/carta.xsl");
     console.log(this.xml);
     // code for IE
-    if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+    if (window.ActiveXObject || this.xhttp.responseType == "msxml-document") {
       let ex = this.xml.transformNode(this.xsl);
       document.getElementById("menuDisplay").innerHTML = ex;
     }
