@@ -56,10 +56,10 @@ class Location {
     ];
     
     arr.forEach(rest => {
-      console.log("coordenada " + rest);
       new google.maps.Marker({
         map: this.map,
-        position: {lat: rest.x, lng: rest.y}
+        position: {lat: rest.x, lng: rest.y},
+        icon: "https://uo252376.github.io/SEW_JUNIO_2020/resources/blue-dot.png"
       });
     });
   }
