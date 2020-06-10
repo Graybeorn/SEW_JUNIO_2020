@@ -7,15 +7,16 @@ class MenuLoader {
   }
 
   loadXMLDoc(filename) {
-    let xhttp;
     if (window.XMLHttpRequest) {
-       xhttp = new XMLHttpRequest();
-    } else {    // IE 5/6
-       xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      // code for modern browsers
+      var xmlhttp = new XMLHttpRequest();
+    } else {
+      // code for old IE browsers
+      var xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    xhttp.open("GET", filename, false);
-    xhttp.send();
-    return xhttp.responseXML; 
+    xmlhttp.open("GET", filename, false);
+    xmlhttp.send();
+    return xmlhttp.responseXML; 
   }
 
   displayResult() {
