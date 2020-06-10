@@ -17,7 +17,7 @@ class MenuLoader {
     }
     this.xhttp.open("GET", filename, false);
     this.xhttp.send();
-    return xhttp.responseXML; 
+    return this.xhttp.responseXML; 
   }
 
   displayResult() {
