@@ -16,7 +16,13 @@
                 </xsl:attribute></img>
               </td>
               <td colspan="6"><xsl:value-of select="@nombre"/></td>
-              <td><button class="dropdown">?</button></td>
+              <td class="dropdown">?
+                <xsl:for-each select="valorNutricional">
+                  <div class="dropdown-content">
+                    <span>kcal: <xsl:value-of select="@kcal"/> proteinas: <xsl:value-of select="@proteinas"/> grasas: <xsl:value-of select="@grasas"/> saturadas: <xsl:value-of select="@saturadas"/> azúcares: <xsl:value-of select="@azucares"/></span>
+                  </div>
+                </xsl:for-each>
+              </td>
             </tr>
             <tr>
               <td rowspan="3" colspan="6">
@@ -49,11 +55,6 @@
               </td>
             </tr>
           </table>
-          <xsl:for-each select="valorNutricional">
-            <div class="dropdown-content" id="'{$id}'">
-              <span>kcal: <xsl:value-of select="@kcal"/> proteinas: <xsl:value-of select="@proteinas"/> grasas: <xsl:value-of select="@grasas"/> saturadas: <xsl:value-of select="@saturadas"/> azúcares: <xsl:value-of select="@azucares"/></span>
-            </div>
-          </xsl:for-each>
         </div>
 
         </xsl:for-each>
@@ -71,8 +72,12 @@
                 </th>
               </tr>
               <tr>
-                <td>
-                  <button class="dropdown">?</button>
+                <td class="dropdown">?
+                  <xsl:for-each select="valorNutricional">
+                    <div class="dropdown-content">
+                      <span>kcal: <xsl:value-of select="@kcal"/> proteinas: <xsl:value-of select="@proteinas"/> grasas: <xsl:value-of select="@grasas"/> saturadas: <xsl:value-of select="@saturadas"/> azúcares: <xsl:value-of select="@azucares"/></span>
+                    </div>
+                  </xsl:for-each>
                 </td>
                 <td>
                   <button onClick="decrease('{$id}')">-</button>
@@ -90,13 +95,6 @@
                 </td>
               </tr>
             </table>
-            <xsl:for-each select="valorNutricional">
-              <div class="dropdown-content" id="'{$id}'">
-                <span>
-                  kcal: <xsl:value-of select="@kcal"/> proteinas: <xsl:value-of select="@proteinas"/> grasas: <xsl:value-of select="@grasas"/> saturadas: <xsl:value-of select="@saturadas"/> azúcares: <xsl:value-of select="@azucares"/>
-                </span>
-              </div>
-            </xsl:for-each>
           </div>
         </xsl:for-each>
       </section>
@@ -113,8 +111,12 @@
                 </th>
               </tr>
               <tr>
-                <td>
-                  <button class="dropdown">?</button>
+                <td class="dropdown">?
+                  <xsl:for-each select="valorNutricional">
+                    <div class="dropdown-content">
+                      <span>kcal: <xsl:value-of select="@kcal"/> proteinas: <xsl:value-of select="@proteinas"/> grasas: <xsl:value-of select="@grasas"/> saturadas: <xsl:value-of select="@saturadas"/> azúcares: <xsl:value-of select="@azucares"/></span>
+                    </div>
+                  </xsl:for-each>
                 </td>
                 <td>
                   <button onClick="decrease('{$id}')">-</button>
@@ -132,13 +134,6 @@
                 </td>
               </tr>
             </table>
-            <xsl:for-each select="valorNutricional">
-              <div class="dropdown-content" id="'{$id}'">
-                <span>
-                  kcal: <xsl:value-of select="@kcal"/> proteinas: <xsl:value-of select="@proteinas"/> grasas: <xsl:value-of select="@grasas"/> saturadas: <xsl:value-of select="@saturadas"/> azúcares: <xsl:value-of select="@azucares"/>
-                </span>
-              </div>
-            </xsl:for-each>
           </div>
         </xsl:for-each>
       </section>
@@ -155,8 +150,12 @@
                 </th>
               </tr>
               <tr>
-                <td>
-                  <button class="dropdown">?</button>
+                <td class="dropdown">?
+                  <xsl:for-each select="valorNutricional">
+                    <div class="dropdown-content">
+                      <span>kcal: <xsl:value-of select="@kcal"/> proteinas: <xsl:value-of select="@proteinas"/> grasas: <xsl:value-of select="@grasas"/> saturadas: <xsl:value-of select="@saturadas"/> azúcares: <xsl:value-of select="@azucares"/></span>
+                    </div>
+                  </xsl:for-each>
                 </td>
                 <td>
                   <button onClick="decrease('{$id}')">-</button>
@@ -174,13 +173,6 @@
                 </td>
               </tr>
             </table>
-            <xsl:for-each select="valorNutricional">
-              <div class="dropdown-content" id="'{$id}'">
-                <span>
-                  kcal: <xsl:value-of select="@kcal"/> proteinas: <xsl:value-of select="@proteinas"/> grasas: <xsl:value-of select="@grasas"/> saturadas: <xsl:value-of select="@saturadas"/> azúcares: <xsl:value-of select="@azucares"/>
-                </span>
-              </div>
-            </xsl:for-each>
           </div>
         </xsl:for-each>
       </section>
