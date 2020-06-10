@@ -1,3 +1,9 @@
+button.guardar {
+  background: lightgray;
+  color: black;
+  align-self: center;
+}
+
 button.continuar {
   background: red;
   color: white;

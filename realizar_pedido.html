@@ -40,6 +40,7 @@
 
     <div class="recogida">
       <select id="restauranteRecogida" onchange="servicioPedidos.setRestaurante()">
+        <option value="" disabled selected>Selecciona un restaurante</option>
         <option value="Avilés">Avilés</option>
         <option value="Gijón">Gijón</option>
         <option value="Oviedo">Oviedo</option>
@@ -49,6 +50,7 @@
       </select>
     </div>
 
+    <button class="guardar" onclick="servicioPedidos.guardar()">Guardar</button>
     <button class="continuar" onclick="servicioPedidos.continuar()">Continuar</button>
 
 
