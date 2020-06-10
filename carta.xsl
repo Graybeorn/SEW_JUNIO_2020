@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="html" version="5.0" encoding="UTF-8" indent="yes"/>
   
   <xsl:template match="/">
@@ -21,9 +21,12 @@
             <tr>
               <td rowspan="3" colspan="6">
                 <p>Ingredientes: 
-                <xsl:template match="/ingrdiente">
-                  <xsl:value-of select="." separator=", "/>
-                </xsl:template>
+                <xsl:for-each select="ingrediente">
+                  <xsl:value-of select="."/>                                    
+                  <xsl:choose>
+                    <xsl:when test="position() != last()">,<br/></xsl:when>
+                  </xsl:choose>
+                </xsl:for-each>
                 </p>
               </td>
               <td>
