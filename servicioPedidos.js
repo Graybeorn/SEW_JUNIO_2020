@@ -27,7 +27,6 @@ class ServicioPedidos{
   constructor() {
     this.productos = [];
     this.checkSupport();
-    this.recuperarPedido();
   }
 
   añadir(id){
@@ -82,7 +81,6 @@ class ServicioPedidos{
     if(json){
       this.productos = JSON.parse(json)
       for(let i=0;i<this.productos.length;i++){
-        console.log($("#" + this.productos[i].id));
         this.cambiarCantidad(this.productos[i].id, "" + this.productos[i].cantidad);
       }
     } else {
@@ -117,6 +115,9 @@ class ServicioPedidos{
     }
 
     this.productos = prodArray;
+    this.productos.forEach(p=>{
+      this.cambiarCantidad(p.id, p.cantidad);
+    })
     this.guardarPedido();
     
   }
