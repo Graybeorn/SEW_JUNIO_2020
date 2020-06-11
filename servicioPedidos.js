@@ -81,7 +81,7 @@ class ServicioPedidos{
     if(json){
       this.productos = JSON.parse(json)
       for(let i=0;i<this.productos.length;i++){
-        this.cambiarCantidad(this.productos[i].id, "" + this.productos[i].cantidad);
+        this.cambiarCantidad(this.productos[i].id, this.productos[i].cantidad);
       }
     } else {
       this.cargarDeNuevo();
@@ -89,6 +89,8 @@ class ServicioPedidos{
   }
 
   cargarDeNuevo() {
+    
+    console.log("carga de 0");
     let xml = menuLoader.loadXMLDoc("https://uo252376.github.io/SEW_JUNIO_2020/productos.xml");
     console.log(xml);
     let prodArray = [];
