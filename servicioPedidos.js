@@ -93,7 +93,7 @@ class ServicioPedidos{
       prodArray.push(new Pizza(pizzas.item(i).getAttribute("nombre"), pizzas.item(i).getAttribute("id"),pizzas.item(i).getAttribute("precio"), ingredientes));
     }
 
-    let childs = xml.getElementsByTagName("productos").item(0).childNodes();
+    let childs = xml.getElementsByTagName("productos").item(0).childNodes;
     for (var i=1;i<childs.length;i++){
       let xmlProds = childs.getItem(i).childNodes;
       for (var j=0;j<xmlProds.length;j++){
