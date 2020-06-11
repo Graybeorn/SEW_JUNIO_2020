@@ -71,7 +71,7 @@ class ServicioPedidos{
   }
 
   recuperarPedido(){
-    json = window.sessionStorage.getItem("productos");
+    let json = window.sessionStorage.getItem("productos");
     if(json){
       this.productos = JSON.parse(json);
     } else {
@@ -82,6 +82,28 @@ class ServicioPedidos{
   cargarDeNuevo() {
     let xml = menuLoader.loadXMLDoc("https://uo252376.github.io/SEW_JUNIO_2020/productos.xml");
     console.log(xml);
+    let prodArray = [];
+    let pizzas = xml.getElementsByTagName("pizza")
+    for (var i=0; i<pizzas.length; i++) {
+      let ingXmlArray = pizzas.item(i).getElementsByTagName("ingrediente");
+      let ingredientes = [];
+      for(var j=0; j<ingXmlArray.length; j++){
+        ingredientes.push(ingXmlArray.item(j).text);
+      }
+      prodArray.push(new Pizza(pizzas.item(i).getAttribute("nombre"), pizzas.item(i).getAttribute("id"),pizzas.item(i).getAttribute("precio"), ingredientes));
+    }
+
+    let childs = xml.getElementsByTagName("productos").item(0).childNodes();
+    for (var i=1;i<childs.length;i++){
+      let xmlProds = childs.getItem(i).childNodes;
+      for (var j=0;j<xmlProds.length;j++){
+        prodArray.push(new Producto(xmlProds.item(j).getAttribute("nombre"),xmlProds.item(j).getAttribute("id"),xmlProds.item(j).getAttribute("precio"),))
+      }
+    }
+
+    this.productos = prodArray;
+    this.guardarPedido();
+    
   }
 
   guardarPedidoEnArchivo(){
