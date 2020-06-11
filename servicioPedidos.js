@@ -93,12 +93,12 @@ class ServicioPedidos{
       prodArray.push(new Pizza(pizzas.item(i).getAttribute("nombre"), pizzas.item(i).getAttribute("id"),pizzas.item(i).getAttribute("precio"), ingredientes));
     }
 
-    let childs = xml.getElementsByTagName("productos").item(0).childNodes;
-    for (var i=1;i<childs.length;i++){
-      let xmlProds = childs.item(i).childNodes;
-      for (var j=0;j<xmlProds.length;j++){
-        prodArray.push(new Producto(xmlProds.item(j).getAttribute("nombre"),xmlProds.item(j).getAttribute("id"),xmlProds.item(j).getAttribute("precio"),))
-      }
+    let xmlProds = [];
+    xmlProds = xmlProds.concat(xml.getElementsByTagName("bebida"));
+    xmlProds = xmlProds.concat(xml.getElementsByTagName("entrante"));
+    xmlProds = xmlProds.concat(xml.getElementsByTagName("postre"));
+    for (var j=0;j<xmlProds.length;j++){
+      prodArray.push(new Producto(xmlProds.item(j).getAttribute("nombre"),xmlProds.item(j).getAttribute("id"),xmlProds.item(j).getAttribute("precio"),))
     }
 
     this.productos = prodArray;
