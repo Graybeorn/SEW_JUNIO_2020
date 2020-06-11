@@ -82,6 +82,7 @@ class ServicioPedidos{
     if(json){
       this.productos = JSON.parse(json);
       for(let i=0;i<this.productos.length;i++){
+        console.log(this.productos[i]);
         this.cambiarCantidad(this.productos[i].id, this.productos[i].cantidad);
       }
     } else {
