@@ -104,8 +104,12 @@ class ServicioPedidos{
           if(xmlProds.item(j).nodeType==1) {
             console.log(xmlProds.item(j).tagName);
             if(xmlProds.item(j).tagName.includes("pizza")){
-              let ingredientes = xmlProds.item(j).getElementsByTagName("ingrediente");
-              prodArray.push(new Pizza(xmlProds.item(j).getAttribute("nombre"), xmlProds.item(j).getAttribute("id"),xmlProds.item(j).getAttribute("precio"), ingredientes.map(ing => ing.textContent)));
+              let ingredientesXmlArray = xmlProds.item(j).getElementsByTagName("ingrediente");
+              let ingredientes = [];
+              for(let k=0; k<ingredientesXmlArray; k++){
+                ingredientes.push(ingredientesXmlArray.item(k).textContent);
+              }
+              prodArray.push(new Pizza(xmlProds.item(j).getAttribute("nombre"), xmlProds.item(j).getAttribute("id"),xmlProds.item(j).getAttribute("precio"), ingredientes));
             } else {
               prodArray.push(new Producto(xmlProds.item(j).getAttribute("nombre"),xmlProds.item(j).getAttribute("id"),xmlProds.item(j).getAttribute("precio")));
             }
