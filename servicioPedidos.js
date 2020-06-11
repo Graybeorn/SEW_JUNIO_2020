@@ -81,9 +81,9 @@ class ServicioPedidos{
     let json = window.sessionStorage.getItem("productos");
     if(json){
       this.productos = JSON.parse(json);
-      this.productos.forEach( p => {
-        this.cambiarCantidad(p.id, p.cantidad);
-      })
+      for(let i=0;i<this.productos.length;i++){
+        this.cambiarCantidad(this.productos[i].id, this.productos[i].cantidad);
+      }
     } else {
       this.cargarDeNuevo();
     }
