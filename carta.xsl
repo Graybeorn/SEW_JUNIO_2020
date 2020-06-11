@@ -40,7 +40,7 @@
             </tr>
             <tr>
               <td>
-                <input type="number">                
+                <input>                
                   <xsl:attribute name="readonly">readonly</xsl:attribute>
                   <xsl:attribute name="id">
                     <xsl:value-of select="@id"/>
@@ -81,7 +81,7 @@
                   <button onclick="servicioPedidos.retirar('{@id}')">-</button>
                 </td>
                 <td>
-                  <input type="number">
+                  <input>
                     <xsl:attribute name="readonly">readonly</xsl:attribute>
                     <xsl:attribute name="id">
                       <xsl:value-of select="@id"/>
@@ -119,7 +119,7 @@
                   <button onclick="servicioPedidos.retirar('{@id}')">-</button>
                 </td>
                 <td>
-                  <input type="number">
+                  <input>
                     <xsl:attribute name="readonly">readonly</xsl:attribute>
                     <xsl:attribute name="id">
                       <xsl:value-of select="@id"/>
@@ -157,7 +157,7 @@
                   <button onclick="servicioPedidos.retirar('{@id}')">-</button>
                 </td>
                 <td>
-                  <input type="number">
+                  <input>
                     <xsl:attribute name="readonly">readonly</xsl:attribute>
                     <xsl:attribute name="id">
                       <xsl:value-of select="@id"/>
