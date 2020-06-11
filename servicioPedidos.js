@@ -95,23 +95,19 @@ class ServicioPedidos{
     let xml = menuLoader.loadXMLDoc("https://uo252376.github.io/SEW_JUNIO_2020/productos.xml");
     console.log(xml);
     let prodArray = [];
-    let pizzas = xml.getElementsByTagName("pizza")
-    for (var i=0; i<pizzas.length; i++) {
-      let ingXmlArray = pizzas.item(i).getElementsByTagName("ingrediente");
-      let ingredientes = [];
-      for(var j=0; j<ingXmlArray.length; j++){
-        ingredientes.push(ingXmlArray.item(j).textContent);
-      }
-      prodArray.push(new Pizza(pizzas.item(i).getAttribute("nombre"), pizzas.item(i).getAttribute("id"),pizzas.item(i).getAttribute("precio"), ingredientes));
-    }
 
     let childs = xml.getElementsByTagName("productos").item(0).childNodes;
-    for (var i=1;i<childs.length;i++){
+    for (var i=3;i<childs.length;i++){
       if(childs.item(i).nodeType == 1){
         let xmlProds = childs.item(i).childNodes;
         for (var j=0;j<xmlProds.length;j++){
           if(xmlProds.item(j).nodeType==1) {
-            prodArray.push(new Producto(xmlProds.item(j).getAttribute("nombre"),xmlProds.item(j).getAttribute("id"),xmlProds.item(j).getAttribute("precio"),))
+            if(xmlProds.item(j).tagname.includes("pizza")){
+              let ingredientes = xmlProds.item(j).getElementsByTagName("ingrediente");
+              prodArray.push(new Pizza(xmlProds.item(j).getAttribute("nombre"), xmlProds.item(j).getAttribute("id"),xmlProds.item(j).getAttribute("precio"), ingredientes.map(ing => ing.textContent)));
+            } else {
+              prodArray.push(new Producto(xmlProds.item(j).getAttribute("nombre"),xmlProds.item(j).getAttribute("id"),xmlProds.item(j).getAttribute("precio")));
+            }
           }
         }
       }
