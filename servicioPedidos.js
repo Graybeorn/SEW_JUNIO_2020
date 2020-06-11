@@ -47,7 +47,7 @@ class ServicioPedidos{
   }
   
   cambiarCantidad(id, cantidad){
-    $("#" + id).value = producto.cantidad;
+    $("#" + id).value = cantidad;
   }
 
   crearPizza(){
