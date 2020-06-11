@@ -35,6 +35,7 @@ class MenuLoader {
       let xsltProcessor = new XSLTProcessor();
       xsltProcessor.importStylesheet(this.xsl);
       let resultDocument = xsltProcessor.transformToFragment(this.xml, document);
+      console.log(resultDocument);
       document.getElementById("menuDisplay").appendChild(resultDocument);
     }
   }
