@@ -16,7 +16,7 @@
     <nav>
       <a href="./" accesskey="i">Inicio</a>
       <a href="./menu" accesskey="m">Menú</a>
-      <a href="./pizzas" accesskey="p">Pizzas</a>
+      <a href="./carta" accesskey="p">Carta</a>
       <a href="./restaurantes" accesskey="r">Restaurantes</a>
       <a href="./realizar_pedido" accesskey="e">Realizar Pedido</a>
       <a href="./informacion" accesskey="h">Información</a>
@@ -51,6 +51,7 @@
     </div>
 
     <div class="menu">
+      <input class="cargar" type="file" id="file" onchange="lector.loadFile(this.files[0])"/>
       <button class="guardar" onclick="servicioPedidos.guardar()">Guardar</button>
       <button class="continuar" onclick="servicioPedidos.continuar()">Continuar</button>
     </div>

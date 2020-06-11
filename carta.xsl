@@ -36,7 +36,7 @@
                 </p>
               </td>
               <td>
-                <button onclick="increase('{$id}')">+</button>
+                <button onclick="servicioPedidos.añadir('{$id}')">+</button>
               </td>
             </tr>
             <tr>
@@ -51,7 +51,7 @@
             </tr>
             <tr>
               <td>
-                <button onclick="decrease('{$id}')">-</button>
+                <button onclick="servicioPedidos.retirar('{$id}')">-</button>
               </td>
             </tr>
           </table>
@@ -80,7 +80,7 @@
                   </xsl:for-each>
                 </td>
                 <td>
-                  <button onClick="decrease('{$id}')">-</button>
+                  <button onClick="servicioPedidos.retirar('{$id}')">-</button>
                 </td>
                 <td>
                   <input type="number">
@@ -91,7 +91,7 @@
                   </input>
                 </td>
                 <td>
-                  <button onClick="increase('{$id}')">+</button>
+                  <button onClick="servicioPedidos.añadir('{$id}')">+</button>
                 </td>
               </tr>
             </table>
@@ -119,7 +119,7 @@
                   </xsl:for-each>
                 </td>
                 <td>
-                  <button onClick="decrease('{$id}')">-</button>
+                  <button onClick="servicioPedidos.retirar('{$id}')">-</button>
                 </td>
                 <td>
                   <input type="number">
@@ -130,7 +130,7 @@
                   </input>
                 </td>
                 <td>
-                  <button onClick="increase('{$id}')">+</button>
+                  <button onClick="servicioPedidos.añadir('{$id}')">+</button>
                 </td>
               </tr>
             </table>
@@ -158,7 +158,7 @@
                   </xsl:for-each>
                 </td>
                 <td>
-                  <button onClick="decrease('{$id}')">-</button>
+                  <button onClick="servicioPedidos.retirar('{$id}')">-</button>
                 </td>
                 <td>
                   <input type="number">
@@ -169,7 +169,7 @@
                   </input>
                 </td>
                 <td>
-                  <button onClick="increase('{$id}')">+</button>
+                  <button onClick="servicioPedidos.añadir('{$id}')">+</button>
                 </td>
               </tr>
             </table>

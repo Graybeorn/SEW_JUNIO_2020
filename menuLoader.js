@@ -1,4 +1,4 @@
-class MenuLoader {
+class XMLLoader {
 
   constructor() {
     this.xml;
@@ -20,7 +20,7 @@ class MenuLoader {
     return this.xhttp.responseXML; 
   }
 
-  displayResult() {
+  cargarCarta() {
     console.log("enter dispayResult");
     this.xml = this.loadXMLDoc("https://uo252376.github.io/SEW_JUNIO_2020/productos.xml");
     this.xsl = this.loadXMLDoc("https://uo252376.github.io/SEW_JUNIO_2020/carta.xsl");
