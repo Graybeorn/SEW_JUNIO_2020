@@ -83,7 +83,7 @@ class ServicioPedidos{
       this.productos = JSON.parse(json);
       for(let i=0;i<this.productos.length;i++){
         console.log(this.productos[i]);
-        this.cambiarCantidad(this.productos[i].id, this.productos[i].cantidad);
+        this.cambiarCantidad(this.productos[i].id, "" + this.productos[i].cantidad);
       }
     } else {
       this.cargarDeNuevo();
@@ -99,7 +99,7 @@ class ServicioPedidos{
       let ingXmlArray = pizzas.item(i).getElementsByTagName("ingrediente");
       let ingredientes = [];
       for(var j=0; j<ingXmlArray.length; j++){
-        ingredientes.push(ingXmlArray.item(j).text);
+        ingredientes.push(ingXmlArray.item(j).childNodes[0]);
       }
       prodArray.push(new Pizza(pizzas.item(i).getAttribute("nombre"), pizzas.item(i).getAttribute("id"),pizzas.item(i).getAttribute("precio"), ingredientes));
     }
