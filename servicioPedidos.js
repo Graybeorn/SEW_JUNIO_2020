@@ -102,7 +102,7 @@ class ServicioPedidos{
         let xmlProds = childs.item(i).childNodes;
         for (var j=0;j<xmlProds.length;j++){
           if(xmlProds.item(j).nodeType==1) {
-            if(xmlProds.item(j).tagname.includes("pizza")){
+            if(xmlProds.item(j).tagName.includes("pizza")){
               let ingredientes = xmlProds.item(j).getElementsByTagName("ingrediente");
               prodArray.push(new Pizza(xmlProds.item(j).getAttribute("nombre"), xmlProds.item(j).getAttribute("id"),xmlProds.item(j).getAttribute("precio"), ingredientes.map(ing => ing.textContent)));
             } else {
