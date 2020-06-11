@@ -31,12 +31,12 @@ class ServicioPedidos{
   }
 
   añadir(id){
-    this.productos.filter(p => p.id == id)[0].cantidad++;
+    this.productos.filter(p => p.id.includes(id))[0].cantidad++;
     this.guardarPedido();
   }
 
   retirar(id){
-    let producto = this.productos.filter(p => p.id == id)[0];
+    let producto = this.productos.filter(p => p.id.includes(id))[0];
     if(producto.cantidad > 0){
       producto.cantidad--;
     }
