@@ -1,4 +1,4 @@
-class XMLLoader {
+class MenuLoader {
 
   constructor() {
     this.xml;
