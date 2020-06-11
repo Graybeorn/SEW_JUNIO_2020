@@ -31,8 +31,10 @@ class ServicioPedidos{
   }
 
   añadir(id){
-    this.productos.filter(p => p.id.includes(id))[0].cantidad++;
+    let producto = this.productos.filter(p => p.id.includes(id))[0];
+    producto.cantidad++;
     this.guardarPedido();
+    this.cambiarCantidad(producto.id, producto.cantidad);
   }
 
   retirar(id){
@@ -41,6 +43,11 @@ class ServicioPedidos{
       producto.cantidad--;
     }
     this.guardarPedido();
+    this.cambiarCantidad(producto.id, producto.cantidad);
+  }
+  
+  cambiarCantidad(id, cantidad){
+    $("#" + id).value = producto.cantidad;
   }
 
   crearPizza(){
@@ -74,6 +81,9 @@ class ServicioPedidos{
     let json = window.sessionStorage.getItem("productos");
     if(json){
       this.productos = JSON.parse(json);
+      this.productos.forEach( p => {
+        this.cambiarCantidad(p.id, p.cantidad);
+      })
     } else {
       this.cargarDeNuevo();
     }
