@@ -7,7 +7,6 @@
         <h3>Pizzas</h3>
         <xsl:for-each select="productos/pizzas/pizza">
         <div>
-          <xsl:variable name="id" select="id" />
           <table>
             <tr>
               <td rowspan="4" colspan="4"><img alt="No se puede mostrar la imagen">
@@ -36,7 +35,11 @@
                 </p>
               </td>
               <td>
-                <button onclick="servicioPedidos.añadir('{$id}')">+</button>
+                <button>+
+                  <xsl:attribute name="onclick">
+                    servicioPedidos.añadir(<xsl:value-of select="@id"/>)
+                  </xsl:attribute>
+                </button>
               </td>
             </tr>
             <tr>
@@ -51,7 +54,11 @@
             </tr>
             <tr>
               <td>
-                <button onclick="servicioPedidos.retirar('{$id}')">-</button>
+                <button>-
+                  <xsl:attribute name="onclick">
+                    servicioPedidos.retirar(<xsl:value-of select="@id"/>)
+                  </xsl:attribute>
+                </button>
               </td>
             </tr>
           </table>
@@ -64,7 +71,6 @@
         <h3>Bebidas</h3>
         <xsl:for-each select="productos/bebidas/bebida">
           <div>
-            <xsl:variable name="id" select="id" />
             <table>
               <tr>
                 <th colspan="4">
@@ -80,7 +86,11 @@
                   </xsl:for-each>
                 </td>
                 <td>
-                  <button onClick="servicioPedidos.retirar('{$id}')">-</button>
+                  <button>-
+                    <xsl:attribute name="onclick">
+                      servicioPedidos.retirar(<xsl:value-of select="@id"/>)
+                    </xsl:attribute>
+                  </button>
                 </td>
                 <td>
                   <input type="number">
@@ -91,7 +101,11 @@
                   </input>
                 </td>
                 <td>
-                  <button onClick="servicioPedidos.añadir('{$id}')">+</button>
+                <button>+
+                  <xsl:attribute name="onclick">
+                    servicioPedidos.añadir(<xsl:value-of select="@id"/>)
+                  </xsl:attribute>
+                </button>
                 </td>
               </tr>
             </table>
@@ -103,7 +117,6 @@
         <h3>Entrantes</h3>
         <xsl:for-each select="productos/entrantes/entrante">
           <div>
-            <xsl:variable name="id" select="id" />
             <table>
               <tr>
                 <th colspan="4">
@@ -119,7 +132,11 @@
                   </xsl:for-each>
                 </td>
                 <td>
-                  <button onClick="servicioPedidos.retirar('{$id}')">-</button>
+                  <button>-
+                    <xsl:attribute name="onclick">
+                      servicioPedidos.retirar(<xsl:value-of select="@id"/>)
+                    </xsl:attribute>
+                  </button>
                 </td>
                 <td>
                   <input type="number">
@@ -130,7 +147,11 @@
                   </input>
                 </td>
                 <td>
-                  <button onClick="servicioPedidos.añadir('{$id}')">+</button>
+                <button>+
+                  <xsl:attribute name="onclick">
+                    servicioPedidos.añadir(<xsl:value-of select="@id"/>)
+                  </xsl:attribute>
+                </button>
                 </td>
               </tr>
             </table>
@@ -142,7 +163,6 @@
         <h3>Postres</h3>
         <xsl:for-each select="productos/postres/postre">
           <div>
-            <xsl:variable name="id" select="id" />
             <table>
               <tr>
                 <th colspan="4">
@@ -158,7 +178,11 @@
                   </xsl:for-each>
                 </td>
                 <td>
-                  <button onClick="servicioPedidos.retirar('{$id}')">-</button>
+                  <button>-
+                    <xsl:attribute name="onclick">
+                      servicioPedidos.retirar(<xsl:value-of select="@id"/>)
+                    </xsl:attribute>
+                  </button>
                 </td>
                 <td>
                   <input type="number">
@@ -169,7 +193,11 @@
                   </input>
                 </td>
                 <td>
-                  <button onClick="servicioPedidos.añadir('{$id}')">+</button>
+                <button>+
+                  <xsl:attribute name="onclick">
+                    servicioPedidos.añadir(<xsl:value-of select="@id"/>)
+                  </xsl:attribute>
+                </button>
                 </td>
               </tr>
             </table>
