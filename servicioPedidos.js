@@ -75,7 +75,7 @@ class ServicioPedidos{
     if(json){
       this.productos = JSON.parse(json);
     } else {
-      cargarDeNuevo();
+      this.cargarDeNuevo();
     }
   }
 
