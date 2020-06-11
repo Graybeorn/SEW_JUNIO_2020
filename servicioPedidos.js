@@ -97,7 +97,7 @@ class ServicioPedidos{
     let prodArray = [];
 
     let childs = xml.getElementsByTagName("productos").item(0).childNodes;
-    for (var i=3;i<childs.length;i++){
+    for (var i=0;i<childs.length;i++){
       if(childs.item(i).nodeType == 1){
         let xmlProds = childs.item(i).childNodes;
         for (var j=0;j<xmlProds.length;j++){
