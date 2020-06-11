@@ -36,7 +36,7 @@
               </td>
               <td>
                 <button>+
-                  <xsl:attribute name="onclick">
+                  <xsl:attribute name="onClick">
                     servicioPedidos.añadir(<xsl:value-of select="@id"/>)
                   </xsl:attribute>
                 </button>
@@ -55,7 +55,7 @@
             <tr>
               <td>
                 <button>-
-                  <xsl:attribute name="onclick">
+                  <xsl:attribute name="onClick">
                     servicioPedidos.retirar(<xsl:value-of select="@id"/>)
                   </xsl:attribute>
                 </button>
@@ -87,7 +87,7 @@
                 </td>
                 <td>
                   <button>-
-                    <xsl:attribute name="onclick">
+                    <xsl:attribute name="onClick">
                       servicioPedidos.retirar(<xsl:value-of select="@id"/>)
                     </xsl:attribute>
                   </button>
@@ -102,7 +102,7 @@
                 </td>
                 <td>
                 <button>+
-                  <xsl:attribute name="onclick">
+                  <xsl:attribute name="onClick">
                     servicioPedidos.añadir(<xsl:value-of select="@id"/>)
                   </xsl:attribute>
                 </button>
@@ -133,7 +133,7 @@
                 </td>
                 <td>
                   <button>-
-                    <xsl:attribute name="onclick">
+                    <xsl:attribute name="onClick">
                       servicioPedidos.retirar(<xsl:value-of select="@id"/>)
                     </xsl:attribute>
                   </button>
@@ -148,7 +148,7 @@
                 </td>
                 <td>
                 <button>+
-                  <xsl:attribute name="onclick">
+                  <xsl:attribute name="onClick">
                     servicioPedidos.añadir(<xsl:value-of select="@id"/>)
                   </xsl:attribute>
                 </button>
@@ -179,7 +179,7 @@
                 </td>
                 <td>
                   <button>-
-                    <xsl:attribute name="onclick">
+                    <xsl:attribute name="onClick">
                       servicioPedidos.retirar(<xsl:value-of select="@id"/>)
                     </xsl:attribute>
                   </button>
@@ -194,7 +194,7 @@
                 </td>
                 <td>
                 <button>+
-                  <xsl:attribute name="onclick">
+                  <xsl:attribute name="onClick">
                     servicioPedidos.añadir(<xsl:value-of select="@id"/>)
                   </xsl:attribute>
                 </button>
