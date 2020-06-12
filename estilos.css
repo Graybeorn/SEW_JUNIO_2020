@@ -168,7 +168,24 @@ aside .resumenIngrediente {
   color: gray;
 }
 
+#menuDisplay td button, #menuDisplay th button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#menuDisplay td + *, #menuDisplay th + * {
+  display: table-cell;
+}
+
+#menuDisplay section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .ingredientesCarta {
-  max-width: 200;
-  width:200;
+  max-width: 200px;
+  width:200px;
 }
