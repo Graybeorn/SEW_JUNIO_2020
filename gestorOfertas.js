@@ -84,8 +84,8 @@ class GestorOfertas {
     $(".selectorIngrediente").each( function(index){
       if($(this).val()) ingredientes.push($(this).val());
     });
-    let nombre = "custom" + servicioPedidos.productos.length;
-    let id = nombre;
+    let id = "custom" + servicioPedidos.productos.length;
+    let nombre = "Pizza personalizada";
     let precio = ingredientes.length > 2 ? 9.50 + (ingredientes.length - 2) * 0.40 : 9.50;
     servicioPedidos.productos.push(new Pizza(nombre, id, precio, ingredientes));
     servicioPedidos.añadir(id);

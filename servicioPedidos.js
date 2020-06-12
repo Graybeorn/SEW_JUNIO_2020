@@ -133,7 +133,21 @@ class ServicioPedidos{
       total += p.precio * p.cantidad;
       aux +=        "<div class='productoResumen' id='resumen" + p.id + "'>";
       aux +=          "<span> "+ p.nombre +"</span>";
-      aux +=          "<span>"+ p.cantidad+"</span>";
+      if(p.id.includes("custom")){
+        aux += "<div class='resumenIngredientes'>"
+        p.ingredientes.forEach(ing => {
+          aux += "<span class='resumenIngrediente'>" + ing + "</span>";
+        });
+        aux += "</div>"
+      }
+      if(p.id.includes("menu")){
+        aux += "<div class='resumenIngredientes'>"
+        aux += "<span class='resumenIngrediente'>" + p.pizza + "</span>";
+        aux += "<span class='resumenIngrediente'>" + p.bebida + "</span>";
+        aux += "<span class='resumenIngrediente'>" + p.entrante + "</span>";
+        aux += "</div>"
+      }
+      aux +=          "<span>"+ p.cantidad +"</span>";
       aux +=          "<span>"+ p.precio+"</span>";
       aux +=          "<button onclick=\"servicioPedidos.eliminarProducto('"+p.id+"')\">X</button>";
       aux +=        "</div>";
