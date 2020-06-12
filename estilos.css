@@ -168,6 +168,11 @@ aside .resumenIngrediente {
   color: gray;
 }
 
+#menuDisplay table td, #menuDisplay table th {
+  padding: 0px;
+  margin: 0px;
+}
+
 #menuDisplay td button, #menuDisplay th button {
   display: block;
   width: 100%;
@@ -180,6 +185,11 @@ aside .resumenIngrediente {
   display: table-cell;
 }
 
+#menuDisplay table tr p.ingredientesCarta {
+  max-width: 200px;
+  width: 200px;
+}
+
 #menuDisplay section {
   display: flex;
   flex-direction: row;
@@ -187,9 +197,4 @@ aside .resumenIngrediente {
 }
 #menuDisplay section h3 {
   width:100%;
-}
-
-#menuDisplay table tr p.ingredientesCarta {
-  max-width: 200px;
-  width: 200px;
 }
