@@ -185,7 +185,8 @@ aside .resumenIngrediente {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.ingredientesCarta {
+
+#menuDisplay table tr p.ingredientesCarta {
   max-width: 200px;
-  width:200px;
+  width: 200px;
 }
