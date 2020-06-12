@@ -81,9 +81,8 @@ class GestorOfertas {
 
   crearPizza(){
     let ingredientes = [];
-    $(".selectorIngrediente").each(() => {
-      if($(this).value) ingredientes.push($(this).value);
-    })
+    let aux = $(".selectorIngrediente").value
+    aux.forEach( i => {if(i) ingredientes.push(i)});
     let nombre = "custom" + servicioPedidos.productos.length;
     let id = nombre;
     let precio = ingredientes.length > 2 ? 9.50 + (ingredientes.length - 2) * 0.40 : 9.50;
