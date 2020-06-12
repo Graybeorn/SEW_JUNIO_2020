@@ -185,6 +185,9 @@ aside .resumenIngrediente {
   flex-direction: row;
   flex-wrap: wrap;
 }
+#menuDisplay section h3 {
+  width:100%;
+}
 
 #menuDisplay table tr p.ingredientesCarta {
   max-width: 200px;
