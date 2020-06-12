@@ -13,7 +13,7 @@
     <script src="./menuLoader.js"></script>
     <script src="./servicioPedidos.js"></script>
 </head>
-<body  onload="menuLoader.cargarCarta(); servicioPedidos.recuperarPedido();">
+<body  onload="menuLoader.cargarCarta(); servicioPedidos.recuperarPedido(); serviciPedidos.resumenDelPedido()">
     <header>
         <h1>Mundo Pizza</h1>
         <nav>
@@ -25,6 +25,8 @@
             <a href="./informacion" accesskey="h">Información</a>
         </nav>
     </header>
+
+    <aside id="resumenPedido"></aside>
 
     <div id="menuDisplay">
 

@@ -34,6 +34,7 @@ class ServicioPedidos{
     producto.cantidad++;
     this.guardarPedido();
     this.cambiarCantidad(producto.id, producto.cantidad);
+    this.resumenDelPedido();
   }
 
   retirar(id){
@@ -43,6 +44,7 @@ class ServicioPedidos{
     }
     this.guardarPedido();
     this.cambiarCantidad(producto.id, producto.cantidad);
+    this.resumenDelPedido();
   }
   
   cambiarCantidad(id, cantidad){
@@ -118,7 +120,35 @@ class ServicioPedidos{
       alert("Tu buscador no ofrece soporte para la carga de archivos, por lo que no podrás recuperar tu pedido.")
       $('#file').disabled = true;
     }
-}
+  }
+
+  resumenDelPedido(){
+    let aux = "<div>"
+    aux +=      "<h4>Resumen del Pedido</h4>"
+    aux +=      "<div class='listaProductosResumen'>"
+    // Por cada producto:
+    let array = this.productos.filter(p => p.cantidad > 0);
+    let total = 0.0;
+    array.forEach(p => {
+      total += p.precio * p.cantidad;
+      aux +=        "<div class='productoResumen' id='resumen" + p.id + "'>";
+      aux +=          "<span> "+ p.nombre +"</span>";
+      aux +=          "<span>"+ p.cantidad+"</span>";
+      aux +=          "<span>"+ p.precio+"</span>";
+      aux +=          "<button onclick=\"servicioPedidos.eliminarProducto('"+p.id+"')\">X</button>";
+      aux +=        "</div>";
+    });
+    aux +=      "</div>";
+    aux +=    "<span id='precioTotal'>Total: " + total + "€</span>";
+    aux +=  "<button onclick='servicioPedidos.irAValidacion()'>Aceptar</button>";
+    aux +="</div>";
+    $("#resumenPedido").html(aux);
+  }
+
+  eliminarProducto(id){
+    this.productos.filter(p => p.id.includes(id))[0].cantidad=0;
+    this.resumenDelPedido();
+  }
 }
 
 
@@ -134,7 +164,7 @@ class Lector{
           $('button').disabled = true;
           $('input').disabled = true;
       }
-  }
+  }0
 
   loadFile(file){
       if(file.name.match(".json$", "i")){

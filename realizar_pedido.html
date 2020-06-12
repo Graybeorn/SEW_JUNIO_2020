@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <link rel="stylesheet" type="text/css" href="pedidos.css">
 </head>
-<body>
+<body  onload="menuLoader.cargarCarta(); servicioPedidos.recuperarPedido(); serviciPedidos.resumenDelPedido()">
   <header>
     <h1>Mundo Pizza</h1>
     <nav>
@@ -22,6 +22,9 @@
       <a href="./informacion" accesskey="h">Información</a>
     </nav>
   </header>
+
+  
+  <aside id="resumenPedido"></aside>
 
   <section>
 

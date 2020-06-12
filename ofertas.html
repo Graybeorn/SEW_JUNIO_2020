@@ -13,7 +13,7 @@
     <script src="./servicioPedidos.js"></script>
     <script src="./gestorOfertas.js"></script>
 </head>
-<body  onload="servicioPedidos.recuperarPedido(); gestorOfertas.start()">
+<body  onload="servicioPedidos.recuperarPedido(); gestorOfertas.start(); serviciPedidos.resumenDelPedido()">
     <header>
         <h1>Mundo Pizza</h1>
         <nav>
@@ -25,6 +25,9 @@
             <a href="./informacion" accesskey="h">Información</a>
         </nav>
     </header>
+    <aside id="resumenPedido">
+
+    </aside>
     <h2>Ofertas</h2>
     <section>
       <h3>Crear pizza</h3>
