@@ -1,34 +1,33 @@
 class GestorOfertas {
 
-  static arrayIngredientes = [ 
-    "Tomate natural",
-    "Bonito",
-    "Bacon",
-    "Pollo",
-    "Pollo picante",
-    "Pimiento",
-    "Aceitunas",
-    "Aceitunas negras",
-    "Gouda",
-    "Mozzarella",
-    "Jamón serrano",
-    "Cabrales",
-    "Pepperoni",
-    "Alcaparras",
-    "Anchoas",
-    "Jamón york",
-    "Piña",
-    "Jalapeños",
-    "Queso de cabra",
-    "Cebolla",
-    "Orégano",
-    "Salsa barbacoa",
-    "Nata",
-  ];
-
   constructor(){
     // Definir un selector estandar de ingrediente
     this.contadorSelector = 0;
+    this.arrayIngredientes = [ 
+      "Tomate natural",
+      "Bonito",
+      "Bacon",
+      "Pollo",
+      "Pollo picante",
+      "Pimiento",
+      "Aceitunas",
+      "Aceitunas negras",
+      "Gouda",
+      "Mozzarella",
+      "Jamón serrano",
+      "Cabrales",
+      "Pepperoni",
+      "Alcaparras",
+      "Anchoas",
+      "Jamón york",
+      "Piña",
+      "Jalapeños",
+      "Queso de cabra",
+      "Cebolla",
+      "Orégano",
+      "Salsa barbacoa",
+      "Nata",
+    ];
   }
 
   start() {
