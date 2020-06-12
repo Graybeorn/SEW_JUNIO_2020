@@ -69,6 +69,7 @@ nav{                    /*(0,0,1)*/
 
 a{                      /*(0,0,1)*/
   color: black;
+  background: white;  
   margin: 1px;
   padding:3px;
   font-size: 1em;
