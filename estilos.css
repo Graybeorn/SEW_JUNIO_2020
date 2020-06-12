@@ -75,12 +75,6 @@ a{                      /*(0,0,1)*/
   font-family: sans-serif;
 }
 
-a:link {                /*(0,1,1)*/
-  background-color: #c70000;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-}
-
 a:hover    {            /*(0,1,1)*/
   background-color: #c70000;
   text-decoration-line:underline;
