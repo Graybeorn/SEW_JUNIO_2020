@@ -1,12 +1,14 @@
 body /* (0,0,1) */ {
   font: 400 15px Tahoma, sans-serif;
   background-color: #e2d7d5;
-	display:flex;
+  display: flex;
+  flex-direction: column;
 	margin:auto;
 }
 
 main, aside {
-  flex:0 100%
+  display: flex;
+  flex: row;
 }
 
 section /*(0,0,1)*/ {
@@ -134,7 +136,6 @@ aside {
   top: auto;
   font-size: 0.8em;
   z-index: 1; /* Stay on top */
-  position: absolute; /* Fixed Sidebar (stay in place on scroll) */
   padding-top: 20px;
   padding-left: 15px;
   margin-left: 15px;

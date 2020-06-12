@@ -25,11 +25,10 @@
             <a href="./informacion" accesskey="h">Información</a>
         </nav>
     </header>
-
-    <aside id="resumenPedido"></aside>
+    
+    <h2>Ofertas</h2>
       
     <main>
-      <h2>Ofertas</h2>
       <section>
         <h3>Crear pizza</h3>
         <p>Puedes crear tu propia pizza y añadir los ingredientes que desees. El precio inicial de 9.50 incluye la base, salsa de tomate y dos ingredientes. Puedes añadir más ingredientes por 0.40€ cada uno.</p>
@@ -49,11 +48,8 @@
           <button onclick="gestorOfertas.crearSelectorIngrediente()">Añadir ingrediente</button>
           <button onclick="gestorOfertas.crearPizza()">Crear pizza</button>
         </div>
-      </section>
-
-      <section>
-        <h3>Ofertas</h3>
-        <p>Nuestros Ofertass tienen un precio fijo de 14.50. Simplemente escoge una pizza, bebida y entrante y, ¡añade tu Ofertas al pedido!</p>
+      <h3>Menús</h3>
+        <p>Nuestros menús tienen un precio fijo de 14.50. Simplemente escoge una pizza, bebida y entrante y, ¡añade tu Ofertas al pedido!</p>
         <div id="creadorMenu">
           <div>
             <span>Pizza:</span>
@@ -71,6 +67,8 @@
         </div>
         <button onclick="gestorOfertas.añadirMenu()">Añadir</button>
       </section>
+      
+      <aside id="resumenPedido"></aside>
     </main>
 
     <footer>
