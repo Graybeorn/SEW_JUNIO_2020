@@ -26,13 +26,26 @@
   <section>
 
     <h2>Realizar pedido</h2>
+    <section>
+      <h3>Resumen del pedido</h3>
+      <div>
+        <h4>Resumen del Pedido</h4>
+        <div class="listaProductosResumen">
+          <div class="productoResumen" id="idProducto">
+            <span> nombreProducto</span><span>cantidadProducto</span><span>precioProducto</span><button onclick="servicioPedidos.eliminarProducto()">X</button>
+          </div>
+        </div>
+        <span id="precioTotal">Total: precioTotal€</span>
+        <button onclick="servicioPedidos.irAValidacion()"></button>
+      </div>
+    </section>
 
     <h3>Tipo de pedido</h3>
 
-    <input type="radio" id="domicilio" name="tipoPedido" value="domicilio">
-    <label for="male">A domicilio</label>
+    <input type="radio" id="domicilio" name="tipoPedido" value="domicilio"> <!-- Añadir evento cambio selector y tipo pedido -->
+    <label for="domicilio">A domicilio</label>
     <input type="radio" id="recogida" name="tipoPedido" value="recogida">
-    <label for="female">Recogida</label>
+    <label for="recogida">Recogida</label>
 
     <div class="domicilio">
       <input id="direccion" type="text" onchange="servicioPedidos.setDireccion()"/>
