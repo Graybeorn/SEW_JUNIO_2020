@@ -31,9 +31,7 @@ class GestorOfertas {
   }
 
   start() {
-    $(".selectorIngrediente").each(selector => {
-      selector.append(this.opcionesParaSelectorIngrediente());
-    });
+    $(".selectorIngrediente").append(this.opcionesParaSelectorIngrediente());
     // Cargar opciones en los selectores de bebida, pizza y entrante
     this.opcionesParaSelectoresMenu();
   
@@ -83,8 +81,8 @@ class GestorOfertas {
 
   crearPizza(){
     let ingredientes = [];
-    $(".selectorIngrediente").each(selector => {
-      if(selector.value) ingredientes.push(selector.value);
+    $(".selectorIngrediente").each(() => {
+      if($(this).value) ingredientes.push($(this).value);
     })
     let nombre = "custom" + this.productos.length;
     let id = "custom" + this.productos.length;
