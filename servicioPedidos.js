@@ -124,7 +124,7 @@ class ServicioPedidos{
 
   resumenDelPedido(){
     let aux = "<div>"
-    aux +=      "<h4>Resumen del Pedido</h4>"
+    aux +=      "<h2>Resumen del Pedido</h2>"
     aux +=      "<div class='listaProductosResumen'>"
     // Por cada producto:
     let array = this.productos.filter(p => p.cantidad > 0);
@@ -153,7 +153,7 @@ class ServicioPedidos{
       }
     });
     aux +=      "</div>";
-    aux +=    "<span id='precioTotal'>Total: " + total + "€</span>";
+    aux +=    "<span id='precioTotal'>Total: " + total.toFixed(2) + "€</span>";
     aux +=  "<button onclick='servicioPedidos.irAValidacion()'>Aceptar</button>";
     aux +="</div>";
     $("#resumenPedido").html(aux);
