@@ -82,7 +82,7 @@ class GestorOfertas {
   crearPizza(){
     let ingredientes = [];
     $(".selectorIngrediente").each( (select) => {
-      if($(select).val()) ingredientes.push($(select).val());
+      if($(select.target).val()) ingredientes.push($(select.target).val());
     })
     let nombre = "custom" + servicioPedidos.productos.length;
     let id = nombre;
