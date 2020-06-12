@@ -5,7 +5,6 @@
         <pizzas>
           <pizza nombre="Margarita" imagen="" precio="9.80" id="pizza1">
             <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
-            <ingrediente>Tomate</ingrediente>
             <ingrediente>Queso</ingrediente>
             <ingrediente>Oregano</ingrediente>
           </pizza>

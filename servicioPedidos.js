@@ -49,28 +49,6 @@ class ServicioPedidos{
     $("#" + id).attr('value', cantidad);
   }
 
-  crearPizza(){
-    let ingredientes = [];
-    $(".ingredienteSeleccionado").each(index => {
-      ingredientes.push($(this).value);
-    })
-    let nombre = "custom" + this.productos.length;
-    let id = "custom" + this.productos.length;
-    let precio = 9.50 + (ingredientes.length - 2) *0.40;
-    this.productos.push(new Pizza(nombre, id, precio, ingredientes));
-    this.añadir(id);
-  }
-   
-  añadirMenu(){
-    let pizza = $("#pizzaSeleccionada").value;
-    let bebida = $("#bebidaSeleccionada").value;
-    let entrante = $("#entranteSeleccionada").value;
-    let id = "menu" + this.productos.length;
-    this.productos.push(new Menu(id, pizza, entrante, bebida))
-    this.añadir(id);
-  }
-
-
   guardarPedido(){
     let json = JSON.stringify(this.productos);
     window.sessionStorage.setItem("productos", json);
