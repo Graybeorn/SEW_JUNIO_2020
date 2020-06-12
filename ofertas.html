@@ -25,51 +25,53 @@
             <a href="./informacion" accesskey="h">Información</a>
         </nav>
     </header>
-    <aside id="resumenPedido">
 
-    </aside>
-    <h2>Ofertas</h2>
-    <section>
-      <h3>Crear pizza</h3>
-      <p>Puedes crear tu propia pizza y añadir los ingredientes que desees. El precio inicial de 9.50 incluye la base, salsa de tomate y dos ingredientes. Puedes añadir más ingredientes por 0.40€ cada uno.</p>
-      <div id="creadorPizza">
-        <div>
-          <span>Ingrediente:</span>
-          <select class="selectorIngrediente">
-          </select>
+    <aside id="resumenPedido"></aside>
+      
+    <main>
+      <h2>Ofertas</h2>
+      <section>
+        <h3>Crear pizza</h3>
+        <p>Puedes crear tu propia pizza y añadir los ingredientes que desees. El precio inicial de 9.50 incluye la base, salsa de tomate y dos ingredientes. Puedes añadir más ingredientes por 0.40€ cada uno.</p>
+        <div id="creadorPizza">
+          <div>
+            <span>Ingrediente:</span>
+            <select class="selectorIngrediente">
+            </select>
+          </div>
+          <div>
+            <span>Ingrediente:</span>
+            <select class="selectorIngrediente">
+            </select>
+          </div>
         </div>
         <div>
-          <span>Ingrediente:</span>
-          <select class="selectorIngrediente">
-          </select>
+          <button onclick="gestorOfertas.crearSelectorIngrediente()">Añadir ingrediente</button>
+          <button onclick="gestorOfertas.crearPizza()">Crear pizza</button>
         </div>
-      </div>
-      <div>
-        <button onclick="gestorOfertas.crearSelectorIngrediente()">Añadir ingrediente</button>
-        <button onclick="gestorOfertas.crearPizza()">Crear pizza</button>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <h3>Ofertas</h3>
-      <p>Nuestros Ofertass tienen un precio fijo de 14.50. Simplemente escoge una pizza, bebida y entrante y, ¡añade tu Ofertas al pedido!</p>
-      <div id="creadorMenu">
-        <div>
-          <span>Pizza:</span>
-          <select id="selectorPizza">
-          </select>
+      <section>
+        <h3>Ofertas</h3>
+        <p>Nuestros Ofertass tienen un precio fijo de 14.50. Simplemente escoge una pizza, bebida y entrante y, ¡añade tu Ofertas al pedido!</p>
+        <div id="creadorMenu">
+          <div>
+            <span>Pizza:</span>
+            <select id="selectorPizza">
+            </select>
+          </div>
+          <div>
+            <span>Bebida:</span>
+            <select id="selectorBebida"></select>
+          </div>
+          <div>
+            <span>Entrante:</span>
+            <select id="selectorEntrante"></select>
+          </div>
         </div>
-        <div>
-          <span>Bebida:</span>
-          <select id="selectorBebida"></select>
-        </div>
-        <div>
-          <span>Entrante:</span>
-          <select id="selectorEntrante"></select>
-        </div>
-      </div>
-      <button onclick="gestorOfertas.añadirMenu()">Añadir</button>
-    </section>
+        <button onclick="gestorOfertas.añadirMenu()">Añadir</button>
+      </section>
+    </main>
 
     <footer>
         <table>

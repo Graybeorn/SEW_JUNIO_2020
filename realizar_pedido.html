@@ -25,55 +25,55 @@
 
   
   <aside id="resumenPedido"></aside>
-
-  <section>
-
-    <h2>Realizar pedido</h2>
+  <main>
     <section>
-      <h3>Resumen del pedido</h3>
-      <div>
-        <h4>Resumen del Pedido</h4>
-        <div class="listaProductosResumen">
-          <div class="productoResumen" id="idProducto">
-            <span> nombreProducto</span><span>cantidadProducto</span><span>precioProducto</span><button onclick="servicioPedidos.eliminarProducto()">X</button>
+
+      <h2>Realizar pedido</h2>
+      <section>
+        <h3>Resumen del pedido</h3>
+        <div>
+          <h4>Resumen del Pedido</h4>
+          <div class="listaProductosResumen">
+            <div class="productoResumen" id="idProducto">
+              <span> nombreProducto</span><span>cantidadProducto</span><span>precioProducto</span><button onclick="servicioPedidos.eliminarProducto()">X</button>
+            </div>
           </div>
+          <span id="precioTotal">Total: precioTotal€</span>
+          <button onclick="servicioPedidos.irAValidacion()"></button>
         </div>
-        <span id="precioTotal">Total: precioTotal€</span>
-        <button onclick="servicioPedidos.irAValidacion()"></button>
+      </section>
+
+      <h3>Tipo de pedido</h3>
+
+      <input type="radio" id="domicilio" name="tipoPedido" value="domicilio"> <!-- Añadir evento cambio selector y tipo pedido -->
+      <label for="domicilio">A domicilio</label>
+      <input type="radio" id="recogida" name="tipoPedido" value="recogida">
+      <label for="recogida">Recogida</label>
+
+      <div class="domicilio">
+        <input id="direccion" type="text" onchange="servicioPedidos.setDireccion()"/>
       </div>
+
+      <div class="recogida">
+        <select id="restauranteRecogida" onchange="servicioPedidos.setRestaurante()">
+          <option value="" disabled selected>Selecciona un restaurante</option>
+          <option value="Avilés">Avilés</option>
+          <option value="Gijón">Gijón</option>
+          <option value="Oviedo">Oviedo</option>
+          <option value="Siero">Siero</option>
+          <option value="Langreo">Langreo</option>
+          <option value="Llanera">Llanera</option>
+        </select>
+      </div>
+
+      <div class="menu">
+        <input class="cargar" type="file" id="file" onchange="lector.loadFile(this.files[0])"/>
+        <button class="guardar" onclick="servicioPedidos.guardar()">Guardar</button>
+        <button class="continuar" onclick="servicioPedidos.continuar()">Continuar</button>
+      </div>
+
     </section>
-
-    <h3>Tipo de pedido</h3>
-
-    <input type="radio" id="domicilio" name="tipoPedido" value="domicilio"> <!-- Añadir evento cambio selector y tipo pedido -->
-    <label for="domicilio">A domicilio</label>
-    <input type="radio" id="recogida" name="tipoPedido" value="recogida">
-    <label for="recogida">Recogida</label>
-
-    <div class="domicilio">
-      <input id="direccion" type="text" onchange="servicioPedidos.setDireccion()"/>
-    </div>
-
-    <div class="recogida">
-      <select id="restauranteRecogida" onchange="servicioPedidos.setRestaurante()">
-        <option value="" disabled selected>Selecciona un restaurante</option>
-        <option value="Avilés">Avilés</option>
-        <option value="Gijón">Gijón</option>
-        <option value="Oviedo">Oviedo</option>
-        <option value="Siero">Siero</option>
-        <option value="Langreo">Langreo</option>
-        <option value="Llanera">Llanera</option>
-      </select>
-    </div>
-
-    <div class="menu">
-      <input class="cargar" type="file" id="file" onchange="lector.loadFile(this.files[0])"/>
-      <button class="guardar" onclick="servicioPedidos.guardar()">Guardar</button>
-      <button class="continuar" onclick="servicioPedidos.continuar()">Continuar</button>
-    </div>
-
-  </section>
-
+  </main>
   <footer>
     <table>
       <tr>
