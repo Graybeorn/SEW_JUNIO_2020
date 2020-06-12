@@ -81,7 +81,7 @@ class GestorOfertas {
 
   crearPizza(){
     let ingredientes = [];
-    let aux = $(".selectorIngrediente").value
+    let aux = $(".selectorIngrediente").val()
     aux.forEach( i => {if(i) ingredientes.push(i)});
     let nombre = "custom" + servicioPedidos.productos.length;
     let id = nombre;
@@ -91,9 +91,9 @@ class GestorOfertas {
   }
    
   añadirMenu(){
-    let pizza = $("#selectorPizza").value;
-    let bebida = $("#selectorBebida").value;
-    let entrante = $("#selectorEntrante").value;
+    let pizza = $("#selectorPizza").val();
+    let bebida = $("#selectorBebida").val();
+    let entrante = $("#selectorEntrante").val();
     let id = "menu" + servicioPedidos.productos.length;
     servicioPedidos.productos.push(new Menu(id, pizza, entrante, bebida))
     servicioPedidos.añadir(id);
