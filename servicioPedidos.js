@@ -16,7 +16,7 @@ class Pizza extends Producto{
 
 class Menu extends Producto {
   constructor(id, pizza, entrante, bebida){
-    super("Menu", "14.50", id);
+    super("Menu", id,  "14.50");
     this.pizza = pizza;
     this.entrante = entrante;
     this.bebida = bebida;
