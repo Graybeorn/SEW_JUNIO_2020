@@ -167,3 +167,8 @@ aside .resumenIngrediente {
   font-size: 0.6em;
   color: gray;
 }
+
+.ingredientesCarta {
+  max-width: 200;
+  width:200;
+}

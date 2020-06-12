@@ -25,7 +25,7 @@
             </tr>
             <tr>
               <td rowspan="3" colspan="6">
-                <p>Ingredientes: 
+                <p class="ingredientesCarta">Ingredientes: 
                 <xsl:for-each select="ingrediente">
                   <xsl:value-of select="."/>                                    
                   <xsl:choose>
