@@ -3,8 +3,8 @@
   <xsl:output method="html" version="5.0" encoding="UTF-8" indent="yes"/>
   
   <xsl:template match="/">
-      <section>
         <h3>Pizzas</h3>
+      <section>
         <xsl:for-each select="productos/pizzas/pizza">
         <div>
           <table>
@@ -59,8 +59,8 @@
         </xsl:for-each>
       </section>
 
-      <section>
         <h3>Bebidas</h3>
+      <section>
         <xsl:for-each select="productos/bebidas/bebida">
           <div>
             <table>
@@ -97,8 +97,8 @@
         </xsl:for-each>
       </section>
       
-      <section>
         <h3>Entrantes</h3>
+      <section>
         <xsl:for-each select="productos/entrantes/entrante">
           <div>
             <table>
@@ -135,8 +135,8 @@
         </xsl:for-each>
       </section>
       
-      <section>
         <h3>Postres</h3>
+      <section>
         <xsl:for-each select="productos/postres/postre">
           <div>
             <table>
