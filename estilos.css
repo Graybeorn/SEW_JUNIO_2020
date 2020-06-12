@@ -132,6 +132,8 @@ video {                   /*(0,0,1)*/
 aside {
   width: 20%;
   overflow-x: hidden; /* Disable horizontal scroll */
+  position: absolute;
+  height: available;
   right: 0;
   top: auto;
   font-size: 0.8em;
@@ -140,8 +142,16 @@ aside {
   padding-left: 15px;
   margin-left: 15px;
   float: right;
-  background-color: rgba(238, 238, 238, 0.356);
+  background-color: rgb(238, 238, 238);
   box-shadow: 0px -1px 1px 0px #ff0000;
+}
+aside h4 {
+  background-color: #ff0000;
+  color: white;
+}
+
+aside > div > span {
+  border: 1px 0px 1px 0px solid #ff0000;
 }
 
 aside .productoResumen {
