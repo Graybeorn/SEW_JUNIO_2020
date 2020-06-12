@@ -133,6 +133,10 @@ class ServicioPedidos{
       total += p.precio * p.cantidad;
       aux +=        "<div class='productoResumen' id='resumen" + p.id + "'>";
       aux +=          "<span> "+ p.nombre +"</span>";
+      aux +=          "<span>"+ p.cantidad +"</span>";
+      aux +=          "<span>"+ p.precio+"</span>";
+      aux +=          "<button onclick=\"servicioPedidos.eliminarProducto('"+p.id+"')\">X</button>";
+      aux +=        "</div>";
       if(p.id.includes("custom")){
         aux += "<div class='resumenIngredientes'>"
         p.ingredientes.forEach(ing => {
@@ -147,10 +151,6 @@ class ServicioPedidos{
         aux += "<span class='resumenIngrediente'>" + p.entrante + "</span>";
         aux += "</div>"
       }
-      aux +=          "<span>"+ p.cantidad +"</span>";
-      aux +=          "<span>"+ p.precio+"</span>";
-      aux +=          "<button onclick=\"servicioPedidos.eliminarProducto('"+p.id+"')\">X</button>";
-      aux +=        "</div>";
     });
     aux +=      "</div>";
     aux +=    "<span id='precioTotal'>Total: " + total + "€</span>";
