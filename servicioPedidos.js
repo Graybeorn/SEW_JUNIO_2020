@@ -130,6 +130,7 @@ class ServicioPedidos{
 
   cargarPedidoDeArchivo(string){
     this.productos = JSON.parse(string);
+    localStorage.setItem("productos", string);
     this.resumenDelPedido();
   }
 
