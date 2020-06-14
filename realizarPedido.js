@@ -2,11 +2,11 @@ class RealizarPedido {
   constructor() {
     $(".recogida").each(function(index){
       $(this).toggle();
-      this.domicilio ="";
-      this.recogida = "";
-      $("#continuar").arrt("disabled", "true");
-      this.boolDomicilio=true;
     });
+    this.domicilio ="";
+    this.recogida = "";
+    $("#continuar").arrt("disabled", "true");
+    this.boolDomicilio=true;
   }
 
   toggleView(){

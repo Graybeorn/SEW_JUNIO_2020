@@ -30,23 +30,11 @@
   
   <main>
     
+    <h2>Realizar pedido</h2>
+
+    <aside id="resumenPedido"></aside>
+
     <section>
-
-      <h2>Realizar pedido</h2>
-      <section>
-        <h3>Resumen del pedido</h3>
-        <div>
-          <h4>Resumen del Pedido</h4>
-          <div class="listaProductosResumen">
-            <div class="productoResumen" id="idProducto">
-              <span> nombreProducto</span><span>cantidadProducto</span><span>precioProducto</span><button onclick="servicioPedidos.eliminarProducto()">X</button>
-            </div>
-          </div>
-          <span id="precioTotal">Total: precioTotal€</span>
-          <button onclick="servicioPedidos.irAValidacion()"></button>
-        </div>
-      </section>
-
       <h3>Tipo de pedido</h3>
 
       <input type="radio" id="domicilio" name="tipoPedido" value="domicilio" onchange="realizarPedido.toggleView()" checked> <!-- Añadir evento cambio selector y tipo pedido -->
@@ -73,12 +61,11 @@
       <div class="menu">
         <input class="cargar" type="file" id="file" onchange="lector.loadFile(this.files[0])"/>
         <input type="button" value="Descargar Pedido" class="guardar" onclick="servicioPedidos.guardarPedidoEnArchivo()">Guardar</button>
-        <button id="continuar" onclick="servicioPedidos.continuar()">Continuar</button>
+        <button id="continuar" onclick="realizarPedido.avanzar()">Continuar</button>
       </div>
 
     </section>
     
-    <aside id="resumenPedido"></aside>
   
   </main>
   <footer>
