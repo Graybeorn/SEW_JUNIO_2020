@@ -83,3 +83,5 @@ class ValidarPedido {
     }
   }
 }
+
+let validarPedido = new ValidarPedido();
