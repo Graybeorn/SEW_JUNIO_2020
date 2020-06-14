@@ -132,6 +132,9 @@ video {                   /*(0,0,1)*/
 }
 
 aside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   overflow-x: hidden;
   margin: 6px;
   padding: 6px;
