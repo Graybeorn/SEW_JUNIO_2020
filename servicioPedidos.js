@@ -130,7 +130,7 @@ class ServicioPedidos{
 
   cargarPedidoDeArchivo(string){
     this.productos = JSON.parse(string);
-    localStorage.setItem("productos", string);
+    this.guardarPedido();
     this.resumenDelPedido();
   }
 
@@ -182,6 +182,7 @@ class ServicioPedidos{
 
   eliminarProducto(id){
     this.productos.filter(p => p.id.includes(id))[0].cantidad=0;
+    this.guardarPedido();
     this.resumenDelPedido();
   }
 }
