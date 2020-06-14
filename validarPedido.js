@@ -52,7 +52,7 @@ class ValidarPedido {
   }
 
   getDivisa(){
-    let string = $("#selectorDivisa").val
+    let string = $("#selectorDivisa").val();
     this.par.url = this.url1 + string + this.url2;
     $.ajax(this.par);
   }
