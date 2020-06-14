@@ -233,9 +233,13 @@ button.continuar {
   align-self: end;
 }
 
-.domicilio, .menu, .recogida{
+.domicilio, .menu, .recogida, .selectorTipoPedido{
   display: flex;
   flex-direction: row;
+  margin: 4px;
+  padding: 4px;
+}
+.domicilio span, .recogida span {
   margin: 4px;
   padding: 4px;
 }
