@@ -136,7 +136,7 @@ video {                   /*(0,0,1)*/
   margin: 10px;
 }
 
-  #pendienteConfirmacion {
+#resumenPedido {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -148,21 +148,21 @@ video {                   /*(0,0,1)*/
   border: 3px solid #ff0000;
 }
 
-#pendienteConfirmacion h4 {
+#resumenPedido h4 {
   background-color: #ff0000;
   color: white;
 }
 
-#pendienteConfirmacion div {
+#resumenPedido div {
   display: flex;
   flex-direction: column;
 }
 
-#pendienteConfirmacion > div > span {
+#resumenPedido > div > span {
   border: 1px 0px 1px 0px solid #ff0000;
 }
 
-#pendienteConfirmacion .productoResumen {
+#resumenPedido .productoResumen {
   display: grid;
   margin: 2px;
   grid-auto-flow: column;
@@ -172,7 +172,7 @@ video {                   /*(0,0,1)*/
   padding: 3px;
 }
 
-#pendienteConfirmacion .resumenIngredientes {
+#resumenPedido .resumenIngredientes {
   text-align: right;
   margin: 4px;
   padding: 2px;
@@ -181,7 +181,7 @@ video {                   /*(0,0,1)*/
   flex-wrap: nowrap;
 }
 
-#pendienteConfirmacion .resumenIngrediente {
+#resumenPedido .resumenIngrediente {
   font-size: 0.7em;
   color: gray;
 }

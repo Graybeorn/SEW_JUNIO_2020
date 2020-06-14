@@ -48,7 +48,7 @@ class ValidarPedido {
     aux +=    "<option value=\"KRW\">KRW</option>"
     aux += "</select>";
     aux += "</div>";
-    $("#pendienteConfirmacion").html(aux);
+    $("#resumenPedido").html(aux);
   }
 
   getDivisa(){
