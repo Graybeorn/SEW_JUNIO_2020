@@ -6,7 +6,7 @@ body /* (0,0,1) */ {
 	margin: 10px;
 }
 
-section, aside {
+section {
   display: flex;
   flex:	0 100%;
 }
@@ -136,7 +136,7 @@ video {                   /*(0,0,1)*/
   margin: 10px;
 }
 
-aside {
+  #pendienteConfirmacion {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -148,21 +148,21 @@ aside {
   border: 3px solid #ff0000;
 }
 
-aside h4 {
+#pendienteConfirmacion h4 {
   background-color: #ff0000;
   color: white;
 }
 
-aside div {
+#pendienteConfirmacion div {
   display: flex;
   flex-direction: column;
 }
 
-aside > div > span {
+#pendienteConfirmacion > div > span {
   border: 1px 0px 1px 0px solid #ff0000;
 }
 
-aside .productoResumen {
+#pendienteConfirmacion .productoResumen {
   display: grid;
   margin: 2px;
   grid-auto-flow: column;
@@ -172,7 +172,7 @@ aside .productoResumen {
   padding: 3px;
 }
 
-aside .resumenIngredientes {
+#pendienteConfirmacion .resumenIngredientes {
   text-align: right;
   margin: 4px;
   padding: 2px;
@@ -181,7 +181,7 @@ aside .resumenIngredientes {
   flex-wrap: nowrap;
 }
 
-aside .resumenIngrediente {
+#pendienteConfirmacion .resumenIngrediente {
   font-size: 0.7em;
   color: gray;
 }
