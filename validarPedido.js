@@ -38,7 +38,7 @@ class ValidarPedido {
     aux +=      "</div>";
     aux +="</div>";
     aux += "<div class='menuDivisas'>";
-    aux += "<span id='precioTotal'>Total: " + this.total.toFixed(2) + "EUR</span>";
+    aux += "<span id='precioTotal'>Total: " + this.total.toFixed(2) + "</span>";
     aux += "<select id='selectorDivisa' onchange=\"validarPedido.getDivisa()\" >";
     aux +=    "<option value=\"EUR\">EUR</option>"
     aux +=    "<option value=\"USD\">USD</option>"
@@ -64,7 +64,7 @@ class ValidarPedido {
   setDivisa(mult){
     console.log(mult);
     let val = $('#selectorDivisa').val();
-    $("#precioTotal").text("Total: " + (this.total * mult).toFixed(2) + " " + val);
+    $("#precioTotal").text("Total: " + (this.total * mult).toFixed(2));
   }
 
   terminar(){

@@ -188,9 +188,12 @@ video {                   /*(0,0,1)*/
 }
 
 #resumenPedido .menuDivisas {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+  margin: 3px;
+  padding: 3px;
 }
 
 #menuDisplay table td, #menuDisplay table th {
