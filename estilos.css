@@ -28,6 +28,11 @@ nav, footer{                /*(0,0,1)*/
   align-content: center;
 }
 
+footer table {
+  margin-left:auto; 
+  margin-right:auto;
+}
+
 h1 /* (0,0,1) */ {
   background-color:#dd0000; 
   color: white;
@@ -228,6 +233,8 @@ button.continuar {
   align-self: end;
 }
 
-.domicilio, .menu{
+.domicilio, .menu, .recogida{
   flex-direction: row;
+  margin: 4px;
+  padding: 4px;
 }

@@ -43,10 +43,11 @@
       <label for="recogida">Recogida</label>
 
       <div class="domicilio">
-        <input id="direccion" type="text" onchange="realizarPedido.setDireccion()"/>
+        <span>Añade la dirección de entrega: </span><input id="direccion" type="text" onchange="realizarPedido.setDireccion()"/>
       </div>
 
       <div class="recogida">
+        <span>Escoge el restaurante: </span>
         <select id="restauranteRecogida" onchange="realizarPedido.setRestaurante()">
           <option value="" disabled selected>Selecciona un restaurante</option>
           <option value="Avilés">Avilés</option>
