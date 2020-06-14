@@ -48,6 +48,10 @@ class ValidarPedido {
     aux +=    "<option value=\"KRW\">KRW</option>"
     aux += "</select>";
     aux += "</div>";
+    aux += "<div class='menuDivisas'>";
+    aux +=  "<span>" + localStorage.getItem("tipoPedido") + "</span>";
+    aux +=   "<button onclick=\"validarPedido.terminar()\">Terminar</button>";
+    aux += "</div>";
     $("#resumenPedido").html(aux);
   }
 
@@ -61,6 +65,10 @@ class ValidarPedido {
     console.log(mult);
     let val = $('#selectorDivisa').val();
     $("#precioTotal").text("Total: " + (this.total * mult).toFixed(2) + " " + val);
+  }
+
+  terminar(){
+    alert("¡Terminado!");
   }
 
   configDivisa(){

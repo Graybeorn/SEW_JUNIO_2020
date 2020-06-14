@@ -190,6 +190,7 @@ video {                   /*(0,0,1)*/
 #resumenPedido .menuDivisas {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 #menuDisplay table td, #menuDisplay table th {

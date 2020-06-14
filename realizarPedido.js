@@ -27,14 +27,12 @@ class RealizarPedido {
 
   setDireccion(){
     let aux = $("#direccion").val();
-    localStorage.removeItem("restaurante");
     this.domicilio = "Entregar en: " + aux;
     $("#continuar").prop("disabled", false);
   }
 
   setRestaurante(){
     let aux = $("#restauranteRecogida").val();
-    localStorage.removeItem("domicilio");
     this.restaurante = "Recoger en: " + aux;
     $("#continuar").prop("disabled", false);
   }
