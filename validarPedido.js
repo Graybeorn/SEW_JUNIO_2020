@@ -5,7 +5,7 @@ class ValidarPedido {
   }
 
   pendienteConfirmacion() {
-    let productos = JSON.parse(localStorage.getItem(productos));
+    let productos = JSON.parse(localStorage.getItem("productos"));
     let aux = "<div>"
     aux +=      "<h2>Resumen del Pedido</h2>"
     aux +=      "<div class='listaProductosResumen'>"
