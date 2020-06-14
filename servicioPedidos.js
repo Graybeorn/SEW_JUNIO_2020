@@ -118,7 +118,7 @@ class ServicioPedidos{
          window.navigator.msSaveBlob(blob1, "Pedido.json");
      } else {
          var url = window.URL || window.webkitURL;
-         link = url.createObjectURL(blob1);
+         let link = url.createObjectURL(blob1);
          var a = document.createElement("a");
          a.download = "Pedido.json";
          a.href = link;
