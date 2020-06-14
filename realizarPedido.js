@@ -1,12 +1,15 @@
 class RealizarPedido {
   constructor() {
+    this.domicilio ="";
+    this.recogida = "";
+    this.boolDomicilio=true;
+  }
+
+  init(){
     $(".recogida").each(function(index){
       $(this).toggle();
     });
-    this.domicilio ="";
-    this.recogida = "";
     $("#continuar").attr("disabled", "true");
-    this.boolDomicilio=true;
   }
 
   toggleView(){
@@ -18,7 +21,7 @@ class RealizarPedido {
     });
     this.boolDomicilio = !this.boolDomicilio;
     if((this.boolDomicilio && ! this.domicilio) || ( !this.boolDomicilio && !this.restaurante)){
-      $("#continuar").arrt("disabled", "true");
+      $("#continuar").attr("disabled", "true");
     }
   }
 
@@ -26,14 +29,14 @@ class RealizarPedido {
     let aux = $("#direccion").val();
     localStorage.removeItem("restaurante");
     this.domicilio = "Entregar en: " + aux;
-    $("#continuar").arrt("disabled", "false");
+    $("#continuar").attr("disabled", "false");
   }
 
   setRestaurante(){
     let aux = $("#restauranteRecogida").val();
     localStorage.removeItem("domicilio");
     this.restaurante = "Recoger en: " + aux;
-    $("#continuar").arrt("disabled", "false");
+    $("#continuar").attr("disabled", "false");
   }
 
   avanzar(){
