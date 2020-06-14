@@ -175,7 +175,7 @@ class ServicioPedidos{
     });
     aux +=      "</div>";
     aux +=    "<span id='precioTotal'>Total: " + total.toFixed(2) + "€</span>";
-    aux +=  "<button onclick='servicioPedidos.irAValidacion()'>Aceptar</button>";
+    aux +=  "<button onclick='servicioPedidos.irARealizarPedido()'>Aceptar</button>";
     aux +="</div>";
     $("#resumenPedido").html(aux);
   }
@@ -184,6 +184,10 @@ class ServicioPedidos{
     this.productos.filter(p => p.id.includes(id))[0].cantidad=0;
     this.guardarPedido();
     this.resumenDelPedido();
+  }
+
+  irARealizarPedido() {
+    window.location.href = "./realizar_pedido.html";
   }
 }
 
