@@ -107,9 +107,29 @@ class ServicioPedidos{
   }
 
   guardarPedidoEnArchivo(){
+     //Convert JSON Array to string.
+     var json = JSON.stringify(this.productos);
+     //Convert JSON string to BLOB.
+     json = [json];
+     var blob1 = new Blob(json, { type: "text/plain;charset=utf-8" });
+     //Check the Browser.
+     var isIE = false || !!document.documentMode;
+     if (isIE) {
+         window.navigator.msSaveBlob(blob1, "Pedido.json");
+     } else {
+         var url = window.URL || window.webkitURL;
+         link = url.createObjectURL(blob1);
+         var a = document.createElement("a");
+         a.download = "Pedido.json";
+         a.href = link;
+         document.body.appendChild(a);
+         a.click();
+         document.body.removeChild(a);
+     }
   }
 
-  cargarPedidoDeArchivo(){
+  cargarPedidoDeArchivo(string){
+    this.productos = JSON.parse(string);
 
   }
 
@@ -178,7 +198,7 @@ class Lector{
           $('button').disabled = true;
           $('input').disabled = true;
       }
-  }0
+  }
 
   loadFile(file){
       if(file.name.match(".json$", "i")){
@@ -186,7 +206,7 @@ class Lector{
           reader.onload = this.loaded;
           reader.readAsText(file);
           reader.onload = () => {
-            this.productos = JSON.parse(reader.result);
+            servicioPedidos.cargarPedidoDeArchivo(reader.result);
           }
       }else{
          alert("Ese archivo no es del tipo adecuado. Escoge un .json");

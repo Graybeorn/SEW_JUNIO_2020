@@ -132,12 +132,7 @@ video {                   /*(0,0,1)*/
 }
 
 aside {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  width: 30%;
   overflow-x: hidden;
-  font-size: 0.8em;
   margin: 6px;
   padding: 6px;
   background-color: rgb(245, 245, 245);
@@ -165,11 +160,14 @@ aside .productoResumen {
   grid-auto-flow: column;
   grid-template-rows: 100%;
   grid-template-columns: 50% 15% 15% 20%;
+  border: 1px solid lightgray;
+  padding: 3px;
 }
 
 aside .resumenIngredientes {
   text-align: right;
   margin: 4px;
+  padding: 2px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -212,4 +210,21 @@ aside .resumenIngrediente {
 }
 #menuDisplay section h3 {
   width:100%;
+}
+
+
+button.guardar {
+  background: lightgray;
+  color: black;
+  align-self: center;
+}
+
+button.continuar {
+  background: red;
+  color: white;
+  align-self: end;
+}
+
+.domicilio, .menu{
+  flex-direction: row;
 }
