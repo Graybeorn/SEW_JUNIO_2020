@@ -187,6 +187,11 @@ video {                   /*(0,0,1)*/
   color: gray;
 }
 
+#resumenPedido .menuDivisas {
+  display: flex;
+  flex-direction: row;
+}
+
 #menuDisplay table td, #menuDisplay table th {
   padding: 0px;
   margin: 0px;

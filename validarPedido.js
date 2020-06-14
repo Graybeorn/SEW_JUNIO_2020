@@ -37,10 +37,10 @@ class ValidarPedido {
     });
     aux +=      "</div>";
     aux +="</div>";
-    aux += "<div>";
-    aux += "<span id='precioTotal'>Total: " + this.total.toFixed(2) + "€</span>";
+    aux += "<div class='menuDivisas'>";
+    aux += "<span id='precioTotal'>Total: " + this.total.toFixed(2) + "EUR</span>";
     aux += "<select id='selectorDivisa' onchange=\"validarPedido.getDivisa()\" >";
-    aux +=    "<option value=\"USD\">EUR</option>"
+    aux +=    "<option value=\"EUR\">EUR</option>"
     aux +=    "<option value=\"USD\">USD</option>"
     aux +=    "<option value=\"JPY\">JPY</option>"
     aux +=    "<option value=\"GBP\">GBP</option>"
