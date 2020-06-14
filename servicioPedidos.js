@@ -180,6 +180,7 @@ class ServicioPedidos{
     $("#resumenPedido").html(aux);
   }
 
+
   eliminarProducto(id){
     this.productos.filter(p => p.id.includes(id))[0].cantidad=0;
     this.guardarPedido();
