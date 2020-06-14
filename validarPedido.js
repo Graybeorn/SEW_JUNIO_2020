@@ -39,19 +39,20 @@ class ValidarPedido {
     aux +="</div>";
     aux += "<div>";
     aux += "<span id='precioTotal'>Total: " + this.total.toFixed(2) + "€</span>";
-    aux += "<selector id='selectorDivisa' onchange=\"getDivisa()\">";
+    aux += "<select id='selectorDivisa' onchange=\"validarPedido.getDivisa()\" >";
     aux +=    "<option value=\"USD\">EUR</option>"
     aux +=    "<option value=\"USD\">USD</option>"
     aux +=    "<option value=\"JPY\">JPY</option>"
     aux +=    "<option value=\"GBP\">GBP</option>"
     aux +=    "<option value=\"CNY\">CNY</option>"
     aux +=    "<option value=\"KRW\">KRW</option>"
-    aux += "</selector>";
+    aux += "</select>";
     aux += "</div>";
     $("#pendienteConfirmacion").html(aux);
   }
 
-  getDivisa(string){
+  getDivisa(){
+    let string = $("#selectorDivisa").val
     this.par.url = this.url1 + string + this.url2;
     $.ajax(this.par);
   }

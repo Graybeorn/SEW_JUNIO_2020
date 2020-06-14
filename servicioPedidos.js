@@ -167,13 +167,13 @@ class ServicioPedidos{
       }
       if(p.id.includes("menu")){
         aux += "<div class='resumenIngredientes'>"
-        aux += "<span class='resumenIngrediente'>" + p.pizza + "</span>";
-        aux += "<span class='resumenIngrediente'>" + p.bebida + "</span>";
-        aux += "<span class='resumenIngrediente'>" + p.entrante + "</span>";
+        aux +=  "<span class='resumenIngrediente'>" + p.pizza + "</span>";
+        aux +=  "<span class='resumenIngrediente'>" + p.bebida + "</span>";
+        aux +=  "<span class='resumenIngrediente'>" + p.entrante + "</span>";
         aux += "</div>"
       }
     });
-    aux +=      "</div>";
+aux +=        "</div>";
     aux +=    "<span id='precioTotal'>Total: " + total.toFixed(2) + "€</span>";
     aux +=  "<button onclick='servicioPedidos.irARealizarPedido()'>Aceptar</button>";
     aux +="</div>";
