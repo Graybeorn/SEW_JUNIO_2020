@@ -5,7 +5,7 @@ class RealizarPedido {
     });
     this.domicilio ="";
     this.recogida = "";
-    $("#continuar").arrt("disabled", "true");
+    $("#continuar").attr("disabled", "true");
     this.boolDomicilio=true;
   }
 
