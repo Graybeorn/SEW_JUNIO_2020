@@ -94,7 +94,7 @@ class ValidarPedido {
     aux += "========================================";
     aux += localStorage.getItem("tipoPedido");
     aux += "========================================";
-    json = [aux];
+    let json = [aux];
     var blob1 = new Blob(json, { type: "text/plain;charset=utf-8" });
     //Check the Browser.
     var isIE = false || !!document.documentMode;
