@@ -139,7 +139,7 @@ class ServicioPedidos{
     if (window.File && window.FileReader && window.FileList && window.Blob) {
     } else {
       alert("Tu buscador no ofrece soporte para la carga de archivos, por lo que no podrás recuperar tu pedido.")
-      $('#file').disabled = true;
+      $('#loadFileXml').disabled = true;
     }
   }
 
