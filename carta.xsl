@@ -9,7 +9,7 @@
         <div>
           <table>
             <tr>
-              <td rowspan="4" colspan="4"><img alt="No se puede mostrar la imagen">
+              <td rowspan="4" colspan="4"><img alt="No se puede mostrar la imagen" class="imagenCarta">
                 <xsl:attribute name="src">
                   <xsl:value-of select="@imagen"/>
                 </xsl:attribute></img>
