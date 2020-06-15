@@ -3,19 +3,19 @@
 <productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="productos.xsd">
         <pizzas>
-          <pizza nombre="Margarita" imagen="./resources/pizza1" precio="9.80" id="pizza1">
+          <pizza nombre="Margarita" imagen="./resources/pizza1.jpg" precio="9.80" id="pizza1">
             <valorNutricional kcal="266" proteinas="11.4" grasas="9.7" saturadas="5.6" azucares="33.3" />
             <ingrediente>Queso</ingrediente>
             <ingrediente>Oregano</ingrediente>
           </pizza>
-          <pizza nombre="Cuatro quesos" imagen="./resources/pizza2" precio="11.20" id="pizza2">
+          <pizza nombre="Cuatro quesos" imagen="./resources/pizza2.png" precio="11.20" id="pizza2">
             <valorNutricional kcal="282" proteinas="11.7" grasas="11.9" saturadas="6.2" azucares="32.0" />
             <ingrediente>Mozzarella</ingrediente>
             <ingrediente>Gouda</ingrediente>
             <ingrediente>Queso de cabra</ingrediente>
             <ingrediente>Cabrales</ingrediente>
           </pizza>
-          <pizza nombre="Barbacoa" imagen="./resources/pizza3" precio="10.80" id="pizza3">
+          <pizza nombre="Barbacoa" imagen="./resources/pizza3.jpg" precio="10.80" id="pizza3">
             <valorNutricional kcal="282" proteinas="11.7" grasas="11.9" saturadas="6.2" azucares="32.0" />
             <ingrediente>Mozzarella</ingrediente>
             <ingrediente>Carne picada</ingrediente>
@@ -23,7 +23,7 @@
             <ingrediente>Salsa Barbacoa</ingrediente>
             <ingrediente>Orégano</ingrediente>
           </pizza>
-          <pizza nombre="Carbonara" imagen="./resources/pizza4" precio="10.80" id="pizza4">
+          <pizza nombre="Carbonara" imagen="./resources/pizza4.jpg" precio="10.80" id="pizza4">
             <valorNutricional kcal="282" proteinas="11.7" grasas="11.9" saturadas="6.2" azucares="32.0" />
             <ingrediente>Mozarella</ingrediente>
             <ingrediente>Cebolla</ingrediente>
@@ -32,13 +32,13 @@
             <ingrediente>Huevo</ingrediente>
             <ingrediente>Nata</ingrediente>
           </pizza>
-          <pizza nombre="Hawaiana" imagen="./resources/pizza5" precio="10.20" id="pizza5">
+          <pizza nombre="Hawaiana" imagen="./resources/pizza5.jpg" precio="10.20" id="pizza5">
             <valorNutricional kcal="266" proteinas="11.4" grasas="9.7" saturadas="5.6" azucares="33.3" />
             <ingrediente>Mozzarella</ingrediente>
             <ingrediente>Jamón serrano</ingrediente>
             <ingrediente>Piña</ingrediente>
           </pizza>
-          <pizza nombre="Vegetal (sin queso)" imagen="./resources/pizza6" precio="10.80" id="pizza6">
+          <pizza nombre="Vegetal (sin queso)" imagen="./resources/pizza6.png" precio="10.80" id="pizza6">
             <valorNutricional kcal="266" proteinas="11.4" grasas="9.7" saturadas="5.6" azucares="33.3" />
             <ingrediente>Tomate fresco</ingrediente>
             <ingrediente>Espinacas</ingrediente>
