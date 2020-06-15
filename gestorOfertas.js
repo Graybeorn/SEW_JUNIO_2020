@@ -95,6 +95,10 @@ class GestorOfertas {
     let pizza = $("#selectorPizza").val();
     let bebida = $("#selectorBebida").val();
     let entrante = $("#selectorEntrante").val();
+     if(!pizza || !bebida || !entrante) {
+      alert("No se puede crear un menú vacío!");
+      return;
+    }
     let id = "menu" + servicioPedidos.productos.length;
     servicioPedidos.productos.push(new Menu(id, pizza, entrante, bebida))
     servicioPedidos.añadir(id);
