@@ -273,12 +273,14 @@ input#direccion {
 #pedir {
   width: 90%;
   height: 40px;
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: bolder;
   background-color: white;
   color: red;
-  margin-left: auto;
-  margin-right: auto;
-  display:block;
+  display: block;
+  box-shadow: none;
+  border: 3px solid red;
+  margin: 10px auto 10px auto;
 }
 
 #file {
