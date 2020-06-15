@@ -2,7 +2,7 @@ class GestorOfertas {
 
   constructor(){
     // Definir un selector estandar de ingrediente
-    this.contadorSelector = 0;
+    this.numIngredientes = 2;
     this.arrayIngredientes = [ 
       "Tomate natural",
       "Bonito",
@@ -66,12 +66,13 @@ class GestorOfertas {
   }
 
   crearSelectorIngrediente(){
-    let aux = "<div id='ingrediente" + this.contadorSelector + "'>" + 
-        "<span>Ingrediente:</span>" + 
-        "<select class='selectorIngrediente'>" +
+    this.numIngredientes++;
+    let aux = "<div id='ing" + this.contadorSelector + "'>" + 
+        "<span id='"+ "ingrediente" + this.contadorSelector +"'>Ingrediente:</span>" + 
+        "<select class='selectorIngrediente' title='ingrediente" + this.contadorSelector + "'>" +
           this.opcionesParaSelectorIngrediente() +      
         "</select>" + 
-        "<button onclick=\"gestorOfertas.eliminarSelectorIngrediente('ingrediente" + this.contadorSelector + "')\">x</button></div>";
+        "<button onclick=\"gestorOfertas.eliminarSelectorIngrediente('ing" + this.contadorSelector + "')\">x</button></div>";
     $("#creadorPizza").append(aux);
   }
 

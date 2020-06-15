@@ -33,13 +33,13 @@
         <p>Puedes crear tu propia pizza y añadir los ingredientes que desees. El precio inicial de 9.50 incluye la base, salsa de tomate y dos ingredientes. Puedes añadir más ingredientes por 0.40€ cada uno.</p>
         <div id="creadorPizza">
           <div>
-            <span>Ingrediente:</span>
-            <select class="selectorIngrediente">
+            <span id="ingrediente1">Ingrediente:</span>
+            <select class="selectorIngrediente" title="ingrediente1">
             </select>
           </div>
           <div>
-            <span>Ingrediente:</span>
-            <select class="selectorIngrediente">
+            <span id="ingrediente2">Ingrediente:</span>
+            <select class="selectorIngrediente" title="ingrediente2">
             </select>
           </div>
         </div>
@@ -51,17 +51,17 @@
         <p>Nuestros menús tienen un precio fijo de 14.50. Simplemente escoge una pizza, bebida y entrante y, ¡añade tu menú al pedido!</p>
         <div id="creadorMenu">
           <div>
-            <span>Pizza:</span>
-            <select id="selectorPizza">
+            <span id="labelSelectorPizza">Pizza:</span>
+            <select id="selectorPizza" title="labelSelectorPizza">
             </select>
           </div>
           <div>
-            <span>Bebida:</span>
-            <select id="selectorBebida"></select>
+            <span id="labelSelectorBebida">Bebida:</span>
+            <select id="selectorBebida" title="labelSelectorBebida"></select>
           </div>
           <div>
-            <span>Entrante:</span>
-            <select id="selectorEntrante"></select>
+            <span id="labelSelectorEntrante">Entrante:</span>
+            <select id="selectorEntrante" title="labelSelectorEntrante"></select>
           </div>
         </div>
         <button onclick="gestorOfertas.añadirMenu()">Añadir</button>
