@@ -35,12 +35,12 @@
       <h3>Tipo de pedido</h3>
       <div class="selectorTipoPedido">
         <div>
-          <input type="radio" id="domicilio" name="tipoPedido" value="domicilio" onchange="realizarPedido.toggleView()" checked> <!-- Añadir evento cambio selector y tipo pedido -->
-          <label for="domicilio">A domicilio</label>
+          <input type="radio" id="domicilio" name="tipoPedido" title="labelDomicilio" value="domicilio" onchange="realizarPedido.toggleView()" checked> <!-- Añadir evento cambio selector y tipo pedido -->
+          <span id="labelDomicilio">A domicilio</span>
         </div>
         <div>
-          <input type="radio" id="recogida" name="tipoPedido" value="recogida" onchange="realizarPedido.toggleView()">
-          <label for="recogida">Recogida</label>
+          <input type="radio" id="recogida" name="tipoPedido" title="labelRecogida" value="recogida" onchange="realizarPedido.toggleView()">
+          <span id="labelRecogida">Recogida</span>
         </div>
       </div>
       <div class="domicilio">

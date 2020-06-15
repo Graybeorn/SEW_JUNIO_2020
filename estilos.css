@@ -90,7 +90,7 @@ a{                      /*(0,0,1)*/
 }
 
 a:hover    {            /*(0,1,1)*/
-  color: black;
+  color: white;
   background-color: #c70000;
   text-decoration-line:underline;
   text-decoration-style: dotted;
