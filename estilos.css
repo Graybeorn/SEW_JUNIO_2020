@@ -191,6 +191,11 @@ div#map{
   padding: 3px;
 }
 
+#menuDisplay {
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
 #menuDisplay table {
   max-width: 100%;
 }
