@@ -252,7 +252,7 @@ button.continuar {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: 100%;
-  grid-template-columns: 40% 30% 15% 15%;
+  grid-template-columns: 40% 40% 20%;
   margin: 4px;
   padding: 4px;
 }
@@ -268,4 +268,14 @@ input#direccion {
 #controlesRealizarPedido {
   display: flex;
   justify-content: space-between;
+}
+
+#pedir {
+  width: 90%;
+  height: 40px;
+  font-size: 15px;
+  background-color: white;
+  color: red;
+  margin-left: auto;
+  margin-right: auto;
 }
