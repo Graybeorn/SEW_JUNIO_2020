@@ -116,9 +116,7 @@ img.imagenCarta {                   /*(0,0,1)*/
   justify-self: center;
   max-width: 150px;
   max-height: 150px;
-  width: 150px;
-  height: 150px;
-  margin: 10px;
+  margin: 5px;
 }
 
 video {                   /*(0,0,1)*/
@@ -191,6 +189,10 @@ div#map{
   grid-template-columns: 90% 10%;
   margin: 3px;
   padding: 3px;
+}
+
+#menuDisplay table {
+  max-width: 100%;
 }
 
 #menuDisplay table td, #menuDisplay table th {
