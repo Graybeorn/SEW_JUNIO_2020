@@ -3,6 +3,7 @@ class Location {
       this.infoWindow;
       this.map;
       this.initMap();
+      google.maps.event.trigger(this.map, "resize");
   }
   initMap(){
       this.map = new google.maps.Map(document.getElementById('map'), {
