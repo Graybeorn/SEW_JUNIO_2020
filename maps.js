@@ -16,6 +16,8 @@ class Location {
       } else {
           $("#info").text("Este buscador no ofrece soporte para geolocalizacion.");
       }
+      
+      this.resizeMap();
   }
   showPosition(position) {
       var pos = {
