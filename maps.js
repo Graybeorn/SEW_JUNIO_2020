@@ -3,7 +3,6 @@ class Location {
       this.infoWindow;
       this.map;
       this.initMap();
-      google.maps.event.trigger(this.map, "resize");
   }
   initMap(){
       this.map = new google.maps.Map(document.getElementById('map'), {
@@ -45,6 +44,11 @@ class Location {
       }
   }
 
+  resizeMap() {
+    google.maps.event.trigger(this.map,'resize');
+    this.map.setZoom( this.map.getZoom() );
+  }
+
   loadRestaurants(){
     // Crear marker por cada restaurante
     let arr = [
@@ -70,4 +74,5 @@ class Location {
 
 function start() {
   var api = new Location();
+  api.resizeMap();
 }
