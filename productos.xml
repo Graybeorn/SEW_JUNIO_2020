@@ -3,28 +3,28 @@
 <productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="productos.xsd">
         <pizzas>
-          <pizza nombre="Margarita" imagen="" precio="9.80" id="pizza1">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+          <pizza nombre="Margarita" imagen="./resources/pizza1" precio="9.80" id="pizza1">
+            <valorNutricional kcal="266" proteinas="11.4" grasas="9.7" saturadas="5.6" azucares="33.3" />
             <ingrediente>Queso</ingrediente>
             <ingrediente>Oregano</ingrediente>
           </pizza>
-          <pizza nombre="Cuatro quesos" imagen="" precio="11.20" id="pizza2">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+          <pizza nombre="Cuatro quesos" imagen="./resources/pizza2" precio="11.20" id="pizza2">
+            <valorNutricional kcal="282" proteinas="11.7" grasas="11.9" saturadas="6.2" azucares="32.0" />
             <ingrediente>Mozzarella</ingrediente>
             <ingrediente>Gouda</ingrediente>
             <ingrediente>Queso de cabra</ingrediente>
             <ingrediente>Cabrales</ingrediente>
           </pizza>
-          <pizza nombre="Barbacoa" imagen="" precio="10.80" id="pizza3">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+          <pizza nombre="Barbacoa" imagen="./resources/pizza3" precio="10.80" id="pizza3">
+            <valorNutricional kcal="282" proteinas="11.7" grasas="11.9" saturadas="6.2" azucares="32.0" />
             <ingrediente>Mozzarella</ingrediente>
             <ingrediente>Carne picada</ingrediente>
             <ingrediente>Pimiento rojo</ingrediente>
             <ingrediente>Salsa Barbacoa</ingrediente>
             <ingrediente>Orégano</ingrediente>
           </pizza>
-          <pizza nombre="Carbonara" imagen="" precio="10.80" id="pizza4">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+          <pizza nombre="Carbonara" imagen="./resources/pizza4" precio="10.80" id="pizza4">
+            <valorNutricional kcal="282" proteinas="11.7" grasas="11.9" saturadas="6.2" azucares="32.0" />
             <ingrediente>Mozarella</ingrediente>
             <ingrediente>Cebolla</ingrediente>
             <ingrediente>Champiñones</ingrediente>
@@ -32,14 +32,14 @@
             <ingrediente>Huevo</ingrediente>
             <ingrediente>Nata</ingrediente>
           </pizza>
-          <pizza nombre="Hawaiana" imagen="" precio="10.20" id="pizza5">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+          <pizza nombre="Hawaiana" imagen="./resources/pizza5" precio="10.20" id="pizza5">
+            <valorNutricional kcal="266" proteinas="11.4" grasas="9.7" saturadas="5.6" azucares="33.3" />
             <ingrediente>Mozzarella</ingrediente>
             <ingrediente>Jamón serrano</ingrediente>
             <ingrediente>Piña</ingrediente>
           </pizza>
-          <pizza nombre="Vegetal (sin queso)" imagen="" precio="10.80" id="pizza6">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+          <pizza nombre="Vegetal (sin queso)" imagen="./resources/pizza6" precio="10.80" id="pizza6">
+            <valorNutricional kcal="266" proteinas="11.4" grasas="9.7" saturadas="5.6" azucares="33.3" />
             <ingrediente>Tomate fresco</ingrediente>
             <ingrediente>Espinacas</ingrediente>
             <ingrediente>Champiñones</ingrediente>
@@ -47,7 +47,7 @@
             <ingrediente>Aceitunas negras</ingrediente>
           </pizza>
           <pizza nombre="Siciliana" imagen="" precio="11.20" id="pizza7">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="266" proteinas="11.4" grasas="9.7" saturadas="5.6" azucares="33.3" />
             <ingrediente>Mozzarella</ingrediente>
             <ingrediente>Tomate fresco</ingrediente>
             <ingrediente>Cebolla</ingrediente>
@@ -59,64 +59,64 @@
   
         <bebidas>
           <bebida nombre="Coca-cola" precio="1.80" id="bebida1">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="151" proteinas="" grasas="" saturadas="" azucares="38.9" />
           </bebida>
           <bebida nombre="Coca-cola zero" precio="1.80" id="bebida2">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="151" proteinas="" grasas="" saturadas="" azucares="38.9" />
           </bebida>
           <bebida nombre="Fanta naranja" precio="1.80" id="bebida3">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="151" proteinas="" grasas="" saturadas="" azucares="38.9" />
           </bebida>
           <bebida nombre="Fanta limon" precio="1.80" id="bebida4">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="151" proteinas="" grasas="" saturadas="" azucares="38.9" />
           </bebida>
           <bebida nombre="Agua" precio="" id="bebida5">
-            <valorNutricional kcal="" proteinas="1.20" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="0" proteinas="0" grasas="0" saturadas="0" azucares="0" />
           </bebida>
-          <bebida nombre="Nestea" precio="" id="bebida6">
-            <valorNutricional kcal="" proteinas="1.80" grasas="" saturadas="" azucares="" />
+          <bebida nombre="Nestea" precio="1.80" id="bebida6">
+            <valorNutricional kcal="151" proteinas="" grasas="" saturadas="" azucares="38.9" />
           </bebida>
           <bebida nombre="Estrella galicia" precio="1.80" id="bebida7">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="151" proteinas="" grasas="" saturadas="" azucares="38.9" />
           </bebida>
           <bebida nombre="San Miguel 0,0" precio="2.00" id="bebida8">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="151" proteinas="" grasas="" saturadas="" azucares="38.9" />
           </bebida>
         </bebidas>
         
         <entrantes>
           <entrante nombre="Nuggets de pollo (6 uds)" precio="5.60"  id="entrante1">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="296" proteinas="15.3" grasas="19.8" saturadas="10.3" azucares="14.1" />
           </entrante>
           <entrante nombre="Patatas fritas" precio="3.50" id="entrante2">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="296" proteinas="15.3" grasas="19.8" saturadas="10.3" azucares="14.1" />
           </entrante>
           <entrante nombre="Patatas 3 salsas" precio="4.50" id="entrante3">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="296" proteinas="15.3" grasas="19.8" saturadas="10.3" azucares="14.1" />
           </entrante>
           <entrante nombre="Croquetas de jamón (6 uds)" precio="6.20" id="entrante4">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="296" proteinas="15.3" grasas="19.8" saturadas="10.3" azucares="14.1" />
           </entrante>
           <entrante nombre="Mozzarella fingers (6 uds)" precio="5.20" id="entrante5">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="296" proteinas="15.3" grasas="19.8" saturadas="10.3" azucares="14.1" />
           </entrante>
           <entrante nombre="Patatas panaderas" precio="4.00" id="entrante6">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="296" proteinas="15.3" grasas="19.8" saturadas="10.3" azucares="14.1" />
           </entrante>
         </entrantes>
 
         <postres>
           <postre nombre="Mousse de chocolate" precio="3.60" id="postre1">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="296" proteinas="15.3" grasas="19.8" saturadas="10.3" azucares="14.1" />
           </postre>
           <postre nombre="Tarta de manzana" precio="3.80" id="postre2">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="296" proteinas="15.3" grasas="19.8" saturadas="10.3" azucares="14.1" />
           </postre>
           <postre nombre="Tarta de queso" precio="3.80" id="postre3">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="296" proteinas="15.3" grasas="19.8" saturadas="10.3" azucares="14.1" />
           </postre>
           <postre nombre="Flan de huevo" precio="3.20" id="postre4">
-            <valorNutricional kcal="" proteinas="" grasas="" saturadas="" azucares="" />
+            <valorNutricional kcal="296" proteinas="15.3" grasas="19.8" saturadas="10.3" azucares="14.1" />
           </postre>
         </postres>
 </productos>
