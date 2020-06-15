@@ -1,5 +1,6 @@
 body /* (0,0,1) */ {
   font: 400 15px Tahoma, sans-serif;
+  color: black;
   background-color: #e2d7d5;
   display: flex;
   flex-direction: column;
@@ -7,6 +8,7 @@ body /* (0,0,1) */ {
 }
 
 section /*(0,0,1)*/ {
+  color: black;
   background: rgba(255, 255, 255, 0.945);
   padding: 5px;
   margin: 5px;
@@ -14,6 +16,7 @@ section /*(0,0,1)*/ {
 }
 
 nav, footer{                /*(0,0,1)*/
+  color: white;
   background-color: #dd0000;
   padding:5px;
   align-content: center;
@@ -87,6 +90,7 @@ a{                      /*(0,0,1)*/
 }
 
 a:hover    {            /*(0,1,1)*/
+  color: black;
   background-color: #c70000;
   text-decoration-line:underline;
   text-decoration-style: dotted;
@@ -94,6 +98,7 @@ a:hover    {            /*(0,1,1)*/
 
 table{                  /*(0,0,1)*/
   background: white;
+  color: black;
   margin:5px;
   max-width: 93%;
   justify-self: left;
@@ -106,7 +111,6 @@ table th, table td{     /*(0,0,2)*/
   margin: 3px;
   text-align: left;
   border: 1px solid #ff0000;
-  padding: 5px;
 }
 
 li {                    /*(0,0,1)*/
@@ -117,6 +121,7 @@ ul li, ol li{           /*(0,0,2)*/
   padding: 5px;
   margin: 3px 0px 3px 3px;
   color: black;
+  background-color: rgb(245, 245, 245);
 }
 
 img.imagenCarta {                   /*(0,0,1)*/
@@ -146,8 +151,8 @@ div#map{
   margin-left: auto;
   margin-right: auto;
   padding: 6px;
-  background-color: rgb(245, 245, 245);
   background: white;
+  color: black;
   border: 3px solid #ff0000;
 }
 
@@ -159,10 +164,6 @@ div#map{
 #resumenPedido div {
   display: flex;
   flex-direction: column;
-}
-
-#resumenPedido > div > span {
-  border: 1px 0px 1px 0px solid #ff0000;
 }
 
 #resumenPedido .productoResumen {
@@ -187,6 +188,7 @@ div#map{
 #resumenPedido .resumenIngrediente {
   font-size: 0.7em;
   color: gray;
+  background: white;
 }
 
 #resumenPedido .menuDivisas {
