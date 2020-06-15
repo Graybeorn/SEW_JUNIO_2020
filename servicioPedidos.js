@@ -175,7 +175,6 @@ class ServicioPedidos{
     });
 aux +=        "</div>";
     aux +=    "<span id='precioTotal'>Total: " + total.toFixed(2) + "€</span>";
-    aux +=  "<button onclick='servicioPedidos.irARealizarPedido()'>Aceptar</button>";
     aux +="</div>";
     $("#resumenPedido").html(aux);
   }

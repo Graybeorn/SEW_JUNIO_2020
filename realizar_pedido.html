@@ -56,9 +56,11 @@
         </select>
       </div>
 
-      <div class="menu">
-        <input class="cargar" type="file" id="file" onchange="lector.loadFile(this.files[0])"/>
-        <input type="button" value="Descargar Pedido" class="guardar" onclick="servicioPedidos.guardarPedidoEnArchivo()"/>
+      <div class="menu" id="controlesRealizarPedido">
+        <div>
+          <input class="cargar" type="file" id="file" onchange="lector.loadFile(this.files[0])" value="Guardar pedido"/>
+          <input type="button" value="Descargar Pedido" class="guardar" onclick="servicioPedidos.guardarPedidoEnArchivo()"/>
+        </div>
         <button id="continuar" onclick="realizarPedido.avanzar()">Continuar</button>
       </div>
 
