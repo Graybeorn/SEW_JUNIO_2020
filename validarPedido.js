@@ -72,9 +72,9 @@ class ValidarPedido {
     var productos = JSON.parse(sessionStorage.getItem("productos"));
     let array = productos.filter(p => p.cantidad > 0);
     this.total = 0;
-    let aux = "========================================";
+    let aux = "========================================\r\n";
     aux += "Recibo de compra\r\n";
-    aux += "========================================";
+    aux += "========================================\r\n";
     array.forEach(p => {
       this.total += p.precio * p.cantidad;
       aux += p.nombre + "\t\t" + p.cantidad + "x\t\t" + p.precio + "\r\n";
@@ -88,12 +88,12 @@ class ValidarPedido {
         aux += "\t\t\t\t\t" + p.bebida + "\r\n";
         aux += "\t\t\t\t\t" + p.entrante + "\r\n";
       }
-      aux += "----------------------------------------";
+      aux += "----------------------------------------\r\n";
     });
     aux += "\t\t\t" + $("#precioTotal").text + $("#selectorDivisa").val();
-    aux += "========================================";
+    aux += "========================================\r\n";
     aux += localStorage.getItem("tipoPedido");
-    aux += "========================================";
+    aux += "========================================\r\n";
     let json = [aux];
     var blob1 = new Blob(json, { type: "text/plain;charset=utf-8" });
     //Check the Browser.
