@@ -1,0 +1,17 @@
+========================================Recibo de compra
+========================================Margarita		1x		9.80
+----------------------------------------Coca-cola		1x		1.80
+----------------------------------------Patatas fritas		1x		3.50
+----------------------------------------Tarta de manzana		1x		3.80
+----------------------------------------Pizza personalizada		1x		9.5
+					Pollo picante
+					Mozzarella
+----------------------------------------Pizza personalizada		1x		9.9
+					Aceitunas
+					Tomate natural
+					Jamón york
+----------------------------------------Menu		1x		14.50
+					Cuatro quesos
+					Nestea
+					Nuggets de pollo (6 uds)
+----------------------------------------			function(e){return _(this,function(e){return void 0===e?k.text(this):this.empty().each(function(){1!==this.nodeType&&11!==this.nodeType&&9!==this.nodeType||(this.textContent=e)})},null,e,arguments.length)}EUR========================================Entregar en: C/Historiador Juan Uría 4, 2ºL========================================

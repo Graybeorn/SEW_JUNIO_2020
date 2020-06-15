@@ -72,21 +72,21 @@ class ValidarPedido {
     var productos = JSON.parse(sessionStorage.getItem("productos"));
     let array = productos.filter(p => p.cantidad > 0);
     this.total = 0;
-    aux += "========================================";
-    let aux = "Recibo de compra\n";
+    let aux = "========================================";
+    aux += "Recibo de compra\r\n";
     aux += "========================================";
     array.forEach(p => {
       this.total += p.precio * p.cantidad;
-      aux += p.nombre + "\t\t" + p.cantidad + "x\t\t" + p.precio + "\n";
+      aux += p.nombre + "\t\t" + p.cantidad + "x\t\t" + p.precio + "\r\n";
       if(p.id.includes("custom")){
         p.ingredientes.forEach(ing => {
-          aux += "\t\t\t\t\t" + ing + "\n";
+          aux += "\t\t\t\t\t" + ing + "\r\n";
         });
       }
       if(p.id.includes("menu")){
-        aux += "\t\t\t\t\t" + p.pizza + "\n";
-        aux += "\t\t\t\t\t" + p.bebida + "\n";
-        aux += "\t\t\t\t\t" + p.entrante + "\n";
+        aux += "\t\t\t\t\t" + p.pizza + "\r\n";
+        aux += "\t\t\t\t\t" + p.bebida + "\r\n";
+        aux += "\t\t\t\t\t" + p.entrante + "\r\n";
       }
       aux += "----------------------------------------";
     });
