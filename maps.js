@@ -31,13 +31,14 @@ class Location {
         {lat: 40.443072, lng: -157.821}
       ];
 
-      new google.maps.Polyline({
+      let line = new google.maps.Polyline({
         path: rectaAMadrid,
         geodesic: true,
         strokeColor: '#FF0000',
         strokeOpacity: 1.0,
         strokeWeight: 2
       });
+      line.setMap(this.map);
 
        // Crear marker por cada restaurante
       let arr = [
