@@ -28,7 +28,7 @@ class Location {
 
       var rectaAMadrid = [
         {lat: position.coords.latitude, lng: position.coords.longitude},
-        {lat: 40.443072, lng: -157.821}
+        {lat: 40.4167047, lng: -3.7035825}
       ];
 
       let line = new google.maps.Polyline({
