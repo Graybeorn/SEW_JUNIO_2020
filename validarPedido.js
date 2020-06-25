@@ -90,7 +90,7 @@ class ValidarPedido {
       }
       aux += "----------------------------------------\r\n";
     });
-    aux += "\t\t\t" + $("#precioTotal").text + $("#selectorDivisa").val();
+    aux += "\t\t\t" + $("#precioTotal").text() + $("#selectorDivisa").val();
     aux += "========================================\r\n";
     aux += localStorage.getItem("tipoPedido");
     aux += "========================================\r\n";

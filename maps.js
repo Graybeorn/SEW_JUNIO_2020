@@ -25,6 +25,20 @@ class Location {
 
       new google.maps.Marker({position: pos, map: this.map});
 
+
+      var rectaAMadrid = [
+        {lat: pos.lat, lng: pos.lgn},
+        {lat: 40.443072, lng: -3.691083}
+      ];
+
+      new google.maps.Polyline({
+        path: rectaAMadrid,
+        geodesic: true,
+        strokeColor: '#FF0000',
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+
        // Crear marker por cada restaurante
       let arr = [
         {x: 43.3833306, y: -5.6666694444444445},
